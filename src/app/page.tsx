@@ -497,8 +497,15 @@ export default function Home() {
             <div className="flex flex-wrap justify-center gap-3">
               {[
                 "Sassuolo", "Modena", "Bologna", "Reggio Emilia", "Parma",
+                "Piacenza", "Ferrara", "Ravenna", "Rimini", "Forlì-Cesena",
                 "Carpi", "Fiorano Modenese", "Casalgrande", "Castellarano",
                 "Formigine", "Maranello", "Vignola", "Scandiano",
+                "Mirandola", "Pavullo", "Rubiera", "Correggio",
+                "Guastalla", "Castelfranco Emilia", "Nonantola",
+                "Soliera", "Campogalliano", "Montecchio Emilia",
+                "Fidenza", "Salsomaggiore", "Langhirano",
+                "Imola", "Faenza", "Lugo", "Castel San Pietro",
+                "San Giovanni in Persiceto", "Cento", "Comacchio",
               ].map((city) => (
                 <span
                   key={city}
@@ -509,7 +516,7 @@ export default function Home() {
               ))}
             </div>
             <p className="text-center text-gray-500 text-sm mt-6">
-              Sede a Sassuolo, interventi su tutta la provincia di Modena, Bologna, Reggio Emilia e Parma.
+              Sede a Sassuolo, operativi su tutte le province dell&apos;Emilia-Romagna: Modena, Bologna, Reggio Emilia, Parma, Piacenza, Ferrara, Ravenna, Rimini e Forlì-Cesena.
             </p>
           </AnimatedSection>
         </div>
