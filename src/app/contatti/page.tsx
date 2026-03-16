@@ -51,12 +51,11 @@ export default function Contatti() {
               Contatti
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
-              Parliamo del tuo{" "}
-              <span className="text-safety-yellow">prossimo progetto</span>
+              Come possiamo aiutarvi?
             </h1>
             <p className="text-navy-300 text-lg max-w-2xl leading-relaxed">
-              Preventivi gratuiti, consulenze tecniche, assistenza. Siamo qui per
-              aiutarti a trovare la soluzione migliore.
+              Consulenze tecniche, preventivi, assistenza. Descriveteci la vostra
+              situazione e vi ricontattiamo entro 24 ore.
             </p>
           </AnimatedSection>
         </div>
@@ -73,7 +72,7 @@ export default function Contatti() {
                   Invia una richiesta
                 </h2>
                 <p className="text-navy-600 text-sm mb-8">
-                  Compila il modulo e ti ricontatteremo entro 24 ore lavorative.
+                  Compilate il modulo e vi ricontatteremo entro 24 ore lavorative.
                 </p>
                 <ContactForm />
               </AnimatedSection>

@@ -14,7 +14,7 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "Chi Siamo",
   description:
-    "Nuova T.C.M. Service: oltre 30 anni di esperienza nella vendita, noleggio e riparazione carrelli elevatori a Sassuolo, nel cuore del distretto ceramico.",
+    "Nuova T.C.M. Service: dealer CAT® Lift Trucks dal 1994. Assistenza, noleggio e riparazione carrelli elevatori in Emilia-Romagna.",
 };
 
 const timeline = [
@@ -22,52 +22,52 @@ const timeline = [
     year: "1994",
     title: "La Fondazione",
     description:
-      "Nasce Nuova T.C.M. Service nel cuore del distretto ceramico di Sassuolo, con la missione di servire l'industria locale.",
+      "Nasce Nuova T.C.M. Service a Sassuolo, nel cuore del distretto ceramico, con l'obiettivo di servire l'industria manifatturiera locale.",
   },
   {
     year: "2000",
     title: "Dealer CAT®",
     description:
-      "Diventiamo dealer ufficiale CAT® Lift Trucks, consolidando la partnership con uno dei leader mondiali nella movimentazione.",
+      "Diventiamo dealer ufficiale CAT® Lift Trucks, consolidando la partnership con uno dei leader mondiali nella movimentazione industriale.",
   },
   {
     year: "2010",
-    title: "Espansione Nazionale",
+    title: "Copertura Regionale",
     description:
-      "Il servizio si estende a tutto il territorio nazionale, mantenendo la qualità e la tempestività che ci contraddistinguono.",
+      "Il servizio si estende a tutta l'Emilia-Romagna, mantenendo la qualità e i tempi di risposta che ci contraddistinguono.",
   },
   {
     year: "Oggi",
     title: "Punto di Riferimento",
     description:
-      "Oltre 500 clienti attivi e una squadra di tecnici specializzati al servizio dell'industria italiana.",
+      "Oltre 500 clienti attivi e un team di tecnici specializzati al servizio dell'industria emiliana.",
   },
 ];
 
 const values = [
   {
     icon: Zap,
-    title: "Tempestività",
+    title: "Reattività",
     description:
-      "Ogni ora di fermo macchina è un costo. Interveniamo con rapidità perché conosciamo il valore del tuo tempo.",
+      "Ogni ora di fermo è un costo concreto. I nostri tempi di intervento sono costruiti attorno a questa consapevolezza.",
   },
   {
     icon: Handshake,
-    title: "Rapporto Umano",
+    title: "Rapporto Diretto",
     description:
-      "Siamo una PMI e ci teniamo a esserlo. Conosci il tuo referente, parli con chi decide, risolvi con chi opera.",
+      "Siamo una PMI per scelta. Il vostro referente è la stessa persona che coordina l'intervento e risponde al telefono.",
   },
   {
     icon: Target,
-    title: "Precisione",
+    title: "Specializzazione",
     description:
-      "30 anni nel settore ci hanno insegnato che ogni azienda ha esigenze diverse. Le soluzioni standard non bastano.",
+      "Trent'anni nel settore ci hanno insegnato che ogni impianto ha esigenze specifiche. Le soluzioni standard non bastano.",
   },
   {
     icon: Award,
     title: "Qualità Certificata",
     description:
-      "Ricambi originali, manutenzione certificata, garanzia su ogni intervento. La qualità non è negoziabile.",
+      "Ricambi originali, manutenzione certificata, garanzia documentata su ogni intervento.",
   },
 ];
 
@@ -75,21 +75,20 @@ export default function ChiSiamo() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-navy-950 pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(245,166,35,0.06),transparent_60%)]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <section className="bg-brand-dark pt-32 pb-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
           <AnimatedSection>
-            <p className="text-safety-yellow font-semibold text-sm uppercase tracking-wider mb-4">
+            <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
               Chi Siamo
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
-              Oltre 30 anni di passione per la{" "}
-              <span className="text-safety-yellow">movimentazione industriale</span>
+              Dal 1994, al servizio dell&apos;industria emiliana
             </h1>
-            <p className="text-navy-300 text-lg max-w-2xl leading-relaxed">
-              Dal cuore di Ceramicland, serviamo l&apos;industria italiana con
-              competenza, velocità e un rapporto diretto che solo una PMI può
-              offrire.
+            <p className="text-brand-text-muted text-lg max-w-2xl leading-relaxed">
+              Dealer ufficiale CAT® Lift Trucks con sede a Sassuolo.
+              Assistenza, gestione flotta e batterie industriali per le aziende
+              manifatturiere dell&apos;Emilia-Romagna.
             </p>
           </AnimatedSection>
         </div>
@@ -97,31 +96,31 @@ export default function ChiSiamo() {
 
       {/* STORIA */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
-              <p className="text-safety-amber font-semibold text-sm uppercase tracking-wider mb-3">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
                 La nostra storia
               </p>
-              <h2 className="font-display text-3xl font-bold text-navy-950 mb-6">
+              <h2 className="font-display text-3xl font-bold text-brand-elevated mb-6">
                 Nati dove l&apos;industria è di casa
               </h2>
-              <p className="text-navy-600 leading-relaxed mb-4">
+              <p className="text-gray-600 leading-relaxed mb-4">
                 Sassuolo non è solo ceramica. È un ecosistema industriale dove
                 ogni azienda ha bisogno di movimentare, spostare, sollevare.
-                Nuova T.C.M. Service è nata qui, in mezzo ai capannoni e alle
-                linee di produzione, imparando sul campo cosa serve davvero a
-                un&apos;impresa che lavora.
+                Nuova T.C.M. Service è nata qui, tra i capannoni e le linee di
+                produzione, imparando sul campo cosa serve a un&apos;impresa che
+                lavora.
               </p>
-              <p className="text-navy-600 leading-relaxed mb-4">
-                In oltre 30 anni abbiamo costruito relazioni durature con centinaia
-                di aziende — dal piccolo laboratorio artigianale alla grande
-                industria ceramica — perché abbiamo sempre messo la tempestività
-                e il rapporto umano al primo posto.
+              <p className="text-gray-600 leading-relaxed mb-4">
+                In oltre trent&apos;anni abbiamo costruito relazioni durature con
+                centinaia di aziende del distretto ceramico e manifatturiero,
+                mettendo sempre al primo posto la rapidità di intervento e il
+                rapporto diretto con i nostri clienti.
               </p>
-              <p className="text-navy-600 leading-relaxed">
-                Essere piccoli è la nostra forza: nessun ticket, nessun call
-                center. Quando ci chiami, rispondiamo noi.
+              <p className="text-gray-600 leading-relaxed">
+                La nostra dimensione è una scelta. Nessun ticket, nessun call
+                center. Quando ci chiamate, rispondiamo noi.
               </p>
             </AnimatedSection>
             <AnimatedSection delay={0.15}>
@@ -135,14 +134,14 @@ export default function ChiSiamo() {
       </section>
 
       {/* TIMELINE */}
-      <section className="py-24 bg-navy-50/50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-brand-light">
+        <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center mb-16">
-              <p className="text-safety-amber font-semibold text-sm uppercase tracking-wider mb-3">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
                 Il percorso
               </p>
-              <h2 className="font-display text-3xl font-bold text-navy-950">
+              <h2 className="font-display text-3xl font-bold text-brand-elevated">
                 Le tappe fondamentali
               </h2>
             </div>
@@ -153,21 +152,21 @@ export default function ChiSiamo() {
               <AnimatedSection key={item.year} delay={i * 0.1}>
                 <div className="flex gap-6 sm:gap-10">
                   <div className="flex flex-col items-center">
-                    <div className="w-12 h-12 bg-safety-yellow rounded-xl flex items-center justify-center shrink-0">
-                      <Calendar size={20} className="text-navy-950" />
+                    <div className="w-12 h-12 bg-brand-accent rounded-xl flex items-center justify-center shrink-0">
+                      <Calendar size={20} className="text-white" />
                     </div>
                     {i < timeline.length - 1 && (
-                      <div className="w-px h-full bg-navy-200 my-2" />
+                      <div className="w-px h-full bg-gray-200 my-2" />
                     )}
                   </div>
                   <div className="pb-12">
-                    <p className="font-display font-bold text-safety-amber text-sm mb-1">
+                    <p className="font-mono font-medium text-brand-accent text-sm mb-1">
                       {item.year}
                     </p>
-                    <h3 className="font-display text-xl font-semibold text-navy-950 mb-2">
+                    <h3 className="font-display text-xl font-semibold text-brand-elevated mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-navy-600 text-sm leading-relaxed max-w-md">
+                    <p className="text-gray-600 text-sm leading-relaxed max-w-md">
                       {item.description}
                     </p>
                   </div>
@@ -180,13 +179,13 @@ export default function ChiSiamo() {
 
       {/* VALORI */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center max-w-2xl mx-auto mb-16">
-              <p className="text-safety-amber font-semibold text-sm uppercase tracking-wider mb-3">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
                 I nostri valori
               </p>
-              <h2 className="font-display text-3xl font-bold text-navy-950">
+              <h2 className="font-display text-3xl font-bold text-brand-elevated">
                 Cosa ci guida ogni giorno
               </h2>
             </div>
@@ -196,13 +195,13 @@ export default function ChiSiamo() {
             {values.map((value, i) => (
               <AnimatedSection key={value.title} delay={i * 0.08}>
                 <div className="text-center p-6">
-                  <div className="w-14 h-14 bg-navy-950 rounded-xl flex items-center justify-center mx-auto mb-5">
-                    <value.icon size={24} className="text-safety-yellow" />
+                  <div className="w-14 h-14 bg-brand-dark rounded-xl flex items-center justify-center mx-auto mb-5">
+                    <value.icon size={24} className="text-brand-accent" strokeWidth={1.5} />
                   </div>
-                  <h3 className="font-display font-semibold text-navy-950 mb-2">
+                  <h3 className="font-display font-semibold text-brand-elevated mb-2">
                     {value.title}
                   </h3>
-                  <p className="text-navy-600 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {value.description}
                   </p>
                 </div>
@@ -213,20 +212,20 @@ export default function ChiSiamo() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-navy-950">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="py-20 bg-brand-dark">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-white mb-6">
-              Vuoi conoscerci di persona?
+              Volete conoscerci di persona?
             </h2>
-            <p className="text-navy-300 mb-8 leading-relaxed">
-              Vieni a trovarci a Sassuolo o contattaci per una consulenza gratuita.
+            <p className="text-brand-text-muted mb-8 leading-relaxed">
+              Venite a trovarci a Sassuolo o contattateci per una consulenza tecnica.
             </p>
             <Link
               href="/contatti"
-              className="inline-flex items-center gap-2 bg-safety-yellow hover:bg-safety-amber text-navy-950 font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-xl hover:shadow-safety-yellow/20 group"
+              className="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-white font-semibold px-8 py-4 rounded-lg transition-colors group"
             >
-              Contattaci
+              Contattateci
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform"

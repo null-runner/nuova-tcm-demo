@@ -84,13 +84,11 @@ export default function Servizi() {
               Servizi
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
-              Un unico partner per tutta la{" "}
-              <span className="text-safety-yellow">tua flotta</span>
+              Assistenza completa per la vostra flotta
             </h1>
             <p className="text-navy-300 text-lg max-w-2xl leading-relaxed">
-              Vendita, noleggio, riparazione e batterie: gestiamo ogni aspetto
-              dei tuoi carrelli elevatori perché tu possa concentrarti sul tuo
-              business.
+              Riparazione, noleggio, acquisto e batterie industriali. Un unico
+              referente per tutti gli aspetti della movimentazione.
             </p>
           </AnimatedSection>
         </div>
@@ -182,19 +180,19 @@ export default function Servizi() {
                 step: "01",
                 icon: ClipboardCheck,
                 title: "Analisi",
-                desc: "Ascoltiamo le tue esigenze e valutiamo la soluzione più adatta.",
+                desc: "Ascoltiamo le vostre esigenze e valutiamo la soluzione più adatta.",
               },
               {
                 step: "02",
                 icon: Truck,
                 title: "Proposta",
-                desc: "Ti presentiamo le opzioni — vendita, noleggio o usato — con preventivo chiaro.",
+                desc: "Vi presentiamo le opzioni con un preventivo chiaro e dettagliato.",
               },
               {
                 step: "03",
                 icon: Wrench,
                 title: "Consegna",
-                desc: "Carrello revisionato e consegnato presso la tua sede, pronto all'uso.",
+                desc: "Carrello revisionato e consegnato presso la vostra sede, pronto all'uso.",
               },
               {
                 step: "04",
@@ -229,17 +227,17 @@ export default function Servizi() {
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-navy-950 mb-6">
-              Pronto a ottimizzare la tua flotta?
+              Volete saperne di più?
             </h2>
             <p className="text-navy-600 mb-8 leading-relaxed">
-              Contattaci per una consulenza gratuita. Analizziamo le tue
-              esigenze e ti proponiamo la soluzione migliore.
+              Contattateci per una consulenza tecnica. Analizziamo le vostre
+              esigenze e vi proponiamo la soluzione più adatta.
             </p>
             <Link
               href="/contatti"
               className="inline-flex items-center gap-2 bg-safety-yellow hover:bg-safety-amber text-navy-950 font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-xl hover:shadow-safety-yellow/20 group"
             >
-              Richiedi un Preventivo Gratuito
+              Richiedi una Consulenza
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform"

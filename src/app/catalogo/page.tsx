@@ -78,7 +78,7 @@ export default function Catalogo() {
             </h1>
             <p className="text-navy-300 text-lg max-w-2xl leading-relaxed">
               Una soluzione per ogni esigenza di movimentazione. Nuovi, usati e a
-              noleggio — tutti con assistenza e ricambi garantiti.
+              noleggio, tutti con assistenza e ricambi garantiti.
             </p>
           </AnimatedSection>
         </div>
@@ -130,8 +130,8 @@ export default function Catalogo() {
               Non trovi quello che cerchi?
             </h2>
             <p className="text-navy-600 mb-8 leading-relaxed">
-              Contattaci con le tue specifiche e ti proponiamo il carrello più
-              adatto — nuovo, usato o a noleggio.
+              Contattateci con le vostre specifiche e vi proponiamo il carrello
+              più adatto: nuovo, usato o a noleggio.
             </p>
             <Link
               href="/contatti"
