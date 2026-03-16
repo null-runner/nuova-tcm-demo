@@ -16,7 +16,7 @@ export default function HeroVideo() {
       ref={videoRef}
       muted
       playsInline
-      className="w-full max-w-lg mix-blend-multiply"
+      className="w-full max-w-2xl mix-blend-multiply"
     >
       <source src="/images/hero-forklift-sq.mp4" type="video/mp4" />
     </video>
