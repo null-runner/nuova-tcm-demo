@@ -15,57 +15,100 @@ const categories = [
     title: "Transpallet Manuali",
     description: "Per la movimentazione quotidiana senza complicazioni. Robusti, semplici, praticamente indistruttibili.",
     portata: "Fino a 2.500 kg",
+    models: 2,
     image: "/images/catalog/transpallet-manuali.png",
     alt: "Transpallet manuale CAT®",
+    href: "/catalogo/transpallet-manuali",
   },
   {
     title: "Transpallet Elettrici",
     description: "Quando i volumi aumentano e la movimentazione manuale non basta più. Autonomia estesa, manutenzione ridotta.",
-    portata: "Fino a 2.500 kg",
+    portata: "Fino a 3.000 kg",
+    models: 4,
     image: "/images/catalog/transpallet-elettrici.png",
     alt: "Transpallet elettrico CAT®",
+    href: "/catalogo/transpallet-elettrici",
   },
   {
     title: "Carrelli Stoccatori",
     description: "Stoccaggio in altezza con precisione millimetrica. Progettati per corsie strette e scaffalature intensive.",
     portata: "Fino a 2.000 kg",
+    models: 3,
     image: "/images/catalog/stoccatori.png",
     alt: "Stoccatore elettrico CAT® con montante",
+    href: "/catalogo/stoccatori",
   },
   {
     title: "Carrelli Retrattili",
     description: "Per chi lavora in spazi ridotti con carichi importanti. Sollevamento fino a 13 metri in corsie da 2,5 m.",
     portata: "Fino a 2.500 kg",
+    models: 4,
     image: "/images/catalog/retrattili.png",
     alt: "Carrello retrattile CAT® vista laterale",
+    href: "/catalogo/retrattili",
+  },
+  {
+    title: "Retrattili Multidirezionali",
+    description: "Ideali per la movimentazione di carichi lunghi in spazi ristretti. Versatilità in ogni direzione.",
+    portata: "Fino a 2.500 kg",
+    models: 2,
+    image: "/images/catalog/retrattili.png",
+    alt: "Carrello retrattile multidirezionale CAT®",
+    href: "/catalogo/retrattili-multidirezionali",
   },
   {
     title: "Controbilanciati Elettrici",
     description: "Potenza senza emissioni. La scelta per chi opera in ambienti chiusi o ha obiettivi di sostenibilità.",
     portata: "Da 1,4 a 5,5 ton",
+    models: 22,
     image: "/images/catalog/controbilanciati-elettrici.png",
     alt: "Carrello controbilanciato elettrico CAT® a 4 ruote",
+    href: "/catalogo/controbilanciati-elettrici",
   },
   {
     title: "Controbilanciati Diesel",
     description: "Per carichi pesanti e uso intensivo all'aperto. Affidabilità in qualsiasi condizione operativa.",
     portata: "Da 2,0 a 10 ton",
+    models: 13,
     image: "/images/catalog/controbilanciati-diesel.png",
     alt: "Carrello controbilanciato diesel CAT® heavy-duty",
+    href: "/catalogo/controbilanciati-diesel",
   },
   {
     title: "Commissionatori",
     description: "Picking rapido e preciso. Configurazioni orizzontali e verticali per ogni layout di magazzino.",
-    portata: "Fino a 1.500 kg",
+    portata: "Fino a 1.250 kg",
+    models: 2,
     image: "/images/catalog/commissionatori.png",
     alt: "Commissionatore CAT® per picking in magazzino",
+    href: "/catalogo/commissionatori",
+  },
+  {
+    title: "Trilaterali VNA",
+    description: "Per magazzini ad alta densità. Operatività in corsie strettissime con sollevamento fino a 10 metri.",
+    portata: "Fino a 1.500 kg",
+    models: 1,
+    image: "/images/catalog/stoccatori.png",
+    alt: "Carrello trilaterale VNA CAT®",
+    href: "/catalogo/trilaterali",
+  },
+  {
+    title: "Carrelli da Traino",
+    description: "Capacità di rimorchio fino a 5.000 kg. Per la logistica interna su lunghe distanze.",
+    portata: "Fino a 5.000 kg",
+    models: 1,
+    image: "/images/catalog/transpallet-elettrici.png",
+    alt: "Carrello da traino CAT®",
+    href: "/catalogo/carrello-da-traino",
   },
   {
     title: "Carrelli Usati Garantiti",
     description: "Revisionati dai nostri tecnici, consegnati con garanzia. Il modo più conveniente per ampliare la flotta.",
     portata: "Varie portate",
+    models: 35,
     image: "/images/catalog/carrelli-usati.png",
     alt: "Selezione carrelli elevatori usati revisionati",
+    href: "/catalogo/carrelli-usati",
   },
 ];
 
@@ -97,7 +140,10 @@ export default function Catalogo() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {categories.map((cat, i) => (
               <AnimatedSection key={cat.title} delay={i * 0.05}>
-                <div className="group bg-white border border-gray-100 hover:border-brand-accent/30 rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-gray-100/50 h-full flex flex-col">
+                <Link
+                  href={cat.href}
+                  className="group bg-white border border-gray-100 hover:border-brand-accent/30 rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-gray-100/50 h-full flex flex-col"
+                >
                   <div className="aspect-square bg-brand-light flex items-center justify-center p-6 overflow-hidden">
                     <Image
                       src={cat.image}
@@ -118,15 +164,12 @@ export default function Catalogo() {
                       <span className="text-xs font-medium text-gray-500 bg-brand-light px-3 py-1 rounded-full">
                         {cat.portata}
                       </span>
-                      <Link
-                        href="/contatti"
-                        className="text-brand-accent hover:text-brand-accent-hover text-sm font-medium group-hover:underline"
-                      >
-                        Info →
-                      </Link>
+                      <span className="text-brand-accent text-sm font-medium group-hover:underline">
+                        {cat.models} modelli →
+                      </span>
                     </div>
                   </div>
-                </div>
+                </Link>
               </AnimatedSection>
             ))}
           </div>

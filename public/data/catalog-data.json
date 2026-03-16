@@ -1,0 +1,1007 @@
+{
+  "company": {
+    "name": "Nuova T.C.M. Service s.r.l.",
+    "phone": "+390536 800034",
+    "email": "info@nuovatcmservice.com",
+    "address": "Piazza Bernina 6, Sassuolo MO",
+    "website": "https://www.nuovatcmservice.com",
+    "partner": "CAT Lift Trucks",
+    "images": {
+      "logo": "/images/catalog/logo-company.png",
+      "logoSmall": "/images/catalog/logo-small.png",
+      "heroHeader": "/images/catalog/hero-header.jpg",
+      "homepageHero": "/images/catalog/homepage-hero.png",
+      "office": "/images/catalog/nuova-tcm-office.png",
+      "catLogo": "/images/catalog/cat-lift-trucks-logo.webp"
+    }
+  },
+  "categories": [
+    {
+      "slug": "transpallet-manuali",
+      "title": "Transpallet manuali",
+      "subtitle": "Soluzioni per il trasporto in orizzontale",
+      "capacityRange": "1200-2500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/transpallet-manuali/",
+      "images": {
+        "hero": "/images/catalog/transpallet-manuali/transpallet-manuale-hero.png"
+      },
+      "models": [
+        {
+          "name": "C25(M)(H)(I)(J)(W)",
+          "capacity_kg": 2500,
+          "loadCenter_mm": 600,
+          "battery": null,
+          "maxLiftHeight_mm": null,
+          "image": "/images/catalog/transpallet-manuali/C25-transpallet-manuale.png",
+          "brochure": null
+        },
+        {
+          "name": "NPPL12-15",
+          "capacity_kg": "1200-1500",
+          "loadCenter_mm": 600,
+          "battery": "Li-ION",
+          "maxLiftHeight_mm": null,
+          "image": "/images/catalog/transpallet-manuali/NPPL12-15-li-ion.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "transpallet-elettrici",
+      "title": "Transpallet elettrici",
+      "subtitle": "Soluzioni per il trasporto in orizzontale",
+      "capacityRange": "1600-3000 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/transpallet-elettrici/",
+      "images": {},
+      "models": [
+        {
+          "name": "NPP16-20N3(R)(E) / NPP12N2D",
+          "capacity_kg": "1600/1800/2000",
+          "loadCenter_mm": 600,
+          "battery": "24V/150Ah - MAX 250Ah",
+          "maxLiftHeight_mm": null,
+          "image": "/images/catalog/transpallet-elettrici/NPP16-20N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "NPV20-25N3 / NPF20-25N3(R)(S)",
+          "capacity_kg": "2000/2500",
+          "loadCenter_mm": 600,
+          "battery": "24V/240Ah - MAX 600Ah",
+          "maxLiftHeight_mm": null,
+          "image": "/images/catalog/transpallet-elettrici/NPV20-25N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "NPV20N3D / NPF20N3D(R)(S)",
+          "capacity_kg": 2000,
+          "loadCenter_mm": 600,
+          "battery": "24V/300Ah",
+          "maxLiftHeight_mm": null,
+          "image": "/images/catalog/transpallet-elettrici/NPV20N3D-product.png",
+          "brochure": null
+        },
+        {
+          "name": "NPR20-30N2 / NPS20-30N2",
+          "capacity_kg": "2000/3000",
+          "loadCenter_mm": 600,
+          "battery": "24V/375Ah - MAX 775Ah",
+          "maxLiftHeight_mm": null,
+          "image": "/images/catalog/transpallet-elettrici/NPR20-30N2-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "stoccatori",
+      "title": "Stoccatori",
+      "subtitle": "Trasporti, stoccaggi e prelievi economici di merci su pallet",
+      "capacityRange": "1000-2000 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/stoccatori/",
+      "images": {},
+      "models": [
+        {
+          "name": "NSP10-16N3 / NSP12N2C",
+          "capacity_kg": "1000/1200/1400/1600",
+          "loadCenter_mm": 600,
+          "battery": "24V/150Ah MAX 375Ah",
+          "maxLiftHeight_mm": 5400,
+          "image": "/images/catalog/stoccatori/NSP10-16N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "NSV/NSF12-16N3(R)(S)",
+          "capacity_kg": "1200/1600",
+          "loadCenter_mm": 600,
+          "battery": "24V/300Ah MAX 400Ah",
+          "maxLiftHeight_mm": 5400,
+          "image": "/images/catalog/stoccatori/NSV-NSF12-16N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "NSR12-20N2(I)",
+          "capacity_kg": "1200/1600/2000",
+          "loadCenter_mm": 600,
+          "battery": "24V/375Ah MAX 575Ah",
+          "maxLiftHeight_mm": 6300,
+          "image": "/images/catalog/stoccatori/NSR12-20N2-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "commissionatori",
+      "title": "Commissionatori verticali",
+      "subtitle": "Carrelli commissionatori per altezze basse ed alte",
+      "capacityRange": "1000-2000 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/commissionatori/",
+      "images": {},
+      "models": [
+        {
+          "name": "NOM10P",
+          "capacity_kg": 1000,
+          "loadCenter_mm": 600,
+          "battery": "24V/620Ah (MAX 775Ah)",
+          "maxLiftHeight_mm": 8250,
+          "image": "/images/catalog/commissionatori/NOM10P-product.png",
+          "brochure": null
+        },
+        {
+          "name": "NOH12PH",
+          "capacity_kg": 1250,
+          "loadCenter_mm": 600,
+          "battery": "48V/500Ah (MAX 620Ah)",
+          "maxLiftHeight_mm": 10500,
+          "image": "/images/catalog/commissionatori/NOH12PH-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "retrattili",
+      "title": "Carrelli retrattili",
+      "subtitle": "Moderna ergonomia e veloce sterzo elettronico",
+      "capacityRange": "1200-2500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/retrattili/",
+      "images": {},
+      "models": [
+        {
+          "name": "NR14-16N2L",
+          "capacity_kg": "1400/1600",
+          "loadCenter_mm": 600,
+          "battery": "24V/465Ah MAX 620Ah",
+          "maxLiftHeight_mm": 7500,
+          "image": "/images/catalog/retrattili/NR14-16N2L-product.png",
+          "brochure": "/brochures/ST-NR14-16N2L.pdf"
+        },
+        {
+          "name": "NR14-25(S)(C)(H)(X)N2",
+          "capacity_kg": "1400/2500",
+          "loadCenter_mm": 600,
+          "battery": "24V/620Ah MAX 775Ah",
+          "maxLiftHeight_mm": 13000,
+          "image": "/images/catalog/retrattili/NR14-25-SCHX-N2-product.png",
+          "brochure": "/brochures/ST-NR14-25SCHXN2.pdf"
+        },
+        {
+          "name": "NR12-14N3(L)(C)",
+          "capacity_kg": "1200/1400",
+          "loadCenter_mm": 600,
+          "battery": "24V/465Ah MAX 620Ah",
+          "maxLiftHeight_mm": 8950,
+          "image": "/images/catalog/retrattili/NR12-14N3LC-product.png",
+          "brochure": "/brochures/ST-NR12-14N3LC.pdf"
+        },
+        {
+          "name": "NR16-25N3(H)(X)",
+          "capacity_kg": "1600/2500",
+          "loadCenter_mm": 600,
+          "battery": "24V/620Ah MAX 930Ah",
+          "maxLiftHeight_mm": 12100,
+          "image": "/images/catalog/retrattili/NR16-25N3HX-product.png",
+          "brochure": "/brochures/ST-NR16-25N3HX.pdf"
+        }
+      ]
+    },
+    {
+      "slug": "retrattili-multidirezionali",
+      "title": "Carrelli retrattili Multidirezionali/Quadridirezionali",
+      "subtitle": "Modelli versatili ideali per la movimentazione di carichi lunghi in spazi ristretti",
+      "capacityRange": "2000-2500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/retrattili-multidirezionali/",
+      "images": {},
+      "models": [
+        {
+          "name": "NRM20-25N2",
+          "capacity_kg": "2000/2500",
+          "loadCenter_mm": 600,
+          "battery": "48V/775Ah (MAX 930Ah)",
+          "maxLiftHeight_mm": 10000,
+          "image": "/images/catalog/retrattili-multidirezionali/NRM20-25N2-product.png",
+          "brochure": null
+        },
+        {
+          "name": "NRM20-25N3",
+          "capacity_kg": "2000/2500",
+          "loadCenter_mm": 600,
+          "battery": "48V/465Ah (MAX 930Ah)",
+          "maxLiftHeight_mm": 9700,
+          "image": "/images/catalog/retrattili-multidirezionali/NRM20-25N3-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "retrattili-multidirezionali-quadridirezionali",
+      "title": "Carrelli retrattili Multidirezionali / Quadridirezionali",
+      "subtitle": "Modelli versatili ideali per la movimentazione di carichi lunghi in spazi ristretti",
+      "capacityRange": "2000-2500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/retrattili-multidirezionali-quadridirezionali/",
+      "note": "Same models as retrattili-multidirezionali - this is the quadridirezionali variant page",
+      "images": {},
+      "models": [
+        {
+          "name": "NRM20-25N2",
+          "capacity_kg": "2000/2500",
+          "loadCenter_mm": 600,
+          "battery": "48V/775Ah - MAX 930Ah",
+          "maxLiftHeight_mm": 10000,
+          "image": "/images/catalog/retrattili-multidirezionali-quadridirezionali/NRM20-25N2-product.png",
+          "brochure": null
+        },
+        {
+          "name": "NRM20-25N3",
+          "capacity_kg": "2000/2500",
+          "loadCenter_mm": 600,
+          "battery": "48V/465Ah - MAX 930Ah",
+          "maxLiftHeight_mm": 9700,
+          "image": "/images/catalog/retrattili-multidirezionali-quadridirezionali/NRM20-25N3-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "trilaterali-man-down",
+      "title": "Carrelli Trilaterali man-down VNA",
+      "subtitle": "Tagliare i costi e aumentare l'efficienza",
+      "capacityRange": "1250-1500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/trilaterali-man-down/",
+      "images": {},
+      "models": [
+        {
+          "name": "NTD13-15N3",
+          "capacity_kg": "1250/1500",
+          "loadCenter_mm": 600,
+          "battery": "48V/620Ah - MAX 930Ah",
+          "maxLiftHeight_mm": 10350,
+          "image": "/images/catalog/trilaterali-man-down/NTD13-15N3-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "carrello-da-traino",
+      "title": "Carrello da traino",
+      "subtitle": "Capacita di rimorchio fino a un peso totale di 5000kg",
+      "capacityRange": "3000-5000 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/carrello-da-traino/",
+      "images": {},
+      "models": [
+        {
+          "name": "NTR30-50N2",
+          "capacity_kg": "3000/5000",
+          "loadCenter_mm": null,
+          "battery": "24V/465Ah - MAX 620Ah",
+          "maxLiftHeight_mm": null,
+          "image": "/images/catalog/carrello-da-traino/NTR30-50N2-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "elettrici-48v-3-ruote",
+      "title": "Elettrici 48V - 3 ruote",
+      "subtitle": "Da 1.4 a 2.0 ton",
+      "capacityRange": "1400-2000 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/elettrici-48v-3-ruote-da-1-4-a-2-0-ton/",
+      "parentCategory": "elettrici-con-pneumatici",
+      "images": {},
+      "models": [
+        {
+          "name": "EP14N2T",
+          "capacity_kg": 1400,
+          "loadCenter_mm": 500,
+          "battery": "48V/500Ah-625Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-3-ruote/EP14-16C-18C-N2T-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP16CN2T",
+          "capacity_kg": 1600,
+          "loadCenter_mm": 500,
+          "battery": "48V/500Ah-625Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-3-ruote/EP14-16C-18C-N2T-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP18CN2T",
+          "capacity_kg": 1800,
+          "loadCenter_mm": 500,
+          "battery": "48V/500Ah-625Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-3-ruote/EP14-16C-18C-N2T-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP16N2T",
+          "capacity_kg": 1600,
+          "loadCenter_mm": 500,
+          "battery": "48V/625Ah-750Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-3-ruote/EP16-18-20-N2T-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP18N2T",
+          "capacity_kg": 1800,
+          "loadCenter_mm": 500,
+          "battery": "48V/625Ah-750Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-3-ruote/EP16-18-20-N2T-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP20N2T",
+          "capacity_kg": 2000,
+          "loadCenter_mm": 500,
+          "battery": "48V/625Ah-750Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-3-ruote/EP16-18-20-N2T-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "elettrici-48v-4-ruote",
+      "title": "Elettrici 48V - 4 ruote",
+      "subtitle": "Da 1.6 a 2.0 ton",
+      "capacityRange": "1600-2000 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/elettrici-48v-4-ruote-da-1-6-a-2-0-ton/",
+      "parentCategory": "elettrici-con-pneumatici",
+      "images": {},
+      "models": [
+        {
+          "name": "EP16CN2",
+          "capacity_kg": 1600,
+          "loadCenter_mm": 500,
+          "battery": "48V/500Ah - MAX 625Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-4-ruote/EP-4ruote-48v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP18CN2",
+          "capacity_kg": 1800,
+          "loadCenter_mm": 500,
+          "battery": "48V/500Ah - MAX 625Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-4-ruote/EP-4ruote-48v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP16N2",
+          "capacity_kg": 1600,
+          "loadCenter_mm": 500,
+          "battery": "48V/625Ah - MAX 750Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-4-ruote/EP-4ruote-48v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP18N2",
+          "capacity_kg": 1600,
+          "loadCenter_mm": 500,
+          "battery": "48V/625Ah - MAX 750Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-4-ruote/EP-4ruote-48v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP20N2",
+          "capacity_kg": 2000,
+          "loadCenter_mm": 500,
+          "battery": "48V/625Ah - MAX 750Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-48v-4-ruote/EP-4ruote-48v-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "elettrici-80v-2.5-3.0",
+      "title": "Elettrici 80V",
+      "subtitle": "Da 2.5 a 3.0 ton",
+      "capacityRange": "2500-3500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/elettrici-80v-da-2-5-a-3-0-ton/",
+      "parentCategory": "elettrici-con-pneumatici",
+      "images": {},
+      "models": [
+        {
+          "name": "EP25ACN",
+          "capacity_kg": 2500,
+          "loadCenter_mm": 500,
+          "battery": "80V - 620Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-2.5-3.0/EP25-35-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP25AN",
+          "capacity_kg": 2500,
+          "loadCenter_mm": 500,
+          "battery": "80V - 775Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-2.5-3.0/EP25-35-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP30ACN",
+          "capacity_kg": 3000,
+          "loadCenter_mm": 500,
+          "battery": "80V - 620Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-2.5-3.0/EP25-35-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP30AN",
+          "capacity_kg": 3000,
+          "loadCenter_mm": 500,
+          "battery": "80V - 775Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-2.5-3.0/EP25-35-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP35AN",
+          "capacity_kg": 3500,
+          "loadCenter_mm": 500,
+          "battery": "80V - 775Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-2.5-3.0/EP25-35-80v-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "elettrici-80v-4.0-5.5",
+      "title": "Elettrici 80V",
+      "subtitle": "Da 4.0 a 5.5 ton",
+      "capacityRange": "4000-5500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/elettrici-80v-da-4-0-a-5-5-ton/",
+      "parentCategory": "elettrici-con-pneumatici",
+      "images": {},
+      "models": [
+        {
+          "name": "EP40N",
+          "capacity_kg": 4000,
+          "loadCenter_mm": 500,
+          "battery": "80V - 775Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-4.0-5.5/EP40-55-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP45N",
+          "capacity_kg": 4500,
+          "loadCenter_mm": 500,
+          "battery": "80V - 775Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-4.0-5.5/EP40-55-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP50CN",
+          "capacity_kg": 4990,
+          "loadCenter_mm": 500,
+          "battery": "80V - 775Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-4.0-5.5/EP40-55-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP50N",
+          "capacity_kg": 4990,
+          "loadCenter_mm": 500,
+          "battery": "80V/840Ah - MAX 930Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-4.0-5.5/EP40-55-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP50NH",
+          "capacity_kg": 3500,
+          "loadCenter_mm": 600,
+          "battery": "80V/840Ah - MAX 930Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-4.0-5.5/EP40-55-80v-product.png",
+          "brochure": null
+        },
+        {
+          "name": "EP55NH",
+          "capacity_kg": 5500,
+          "loadCenter_mm": 600,
+          "battery": "80V/840Ah - MAX 930Ah",
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/elettrici-80v-4.0-5.5/EP40-55-80v-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "elettrici-con-pneumatici",
+      "title": "Carrelli elettrici con pneumatici",
+      "subtitle": "Uso interno ed esterno per condizioni di lavoro leggere, medie o pesanti",
+      "capacityRange": "1400-5500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/elettrici-con-pneumatici-generico/",
+      "isParentCategory": true,
+      "subcategories": [
+        "elettrici-48v-3-ruote",
+        "elettrici-48v-4-ruote",
+        "elettrici-80v-2.5-3.0",
+        "elettrici-80v-4.0-5.5"
+      ],
+      "images": {
+        "cat48v3ruote": "/images/catalog/elettrici-con-pneumatici/elettrici-48v-3ruote-cat.png",
+        "cat48v4ruote": "/images/catalog/elettrici-con-pneumatici/elettrici-48v-4ruote-cat.png",
+        "cat80v25_30": "/images/catalog/elettrici-con-pneumatici/elettrici-80v-2.5-3.0-cat.png",
+        "cat80v40_55": "/images/catalog/elettrici-con-pneumatici/elettrici-80v-4.0-5.5-cat.png"
+      },
+      "models": []
+    },
+    {
+      "slug": "diesel-2.0-3.5",
+      "title": "Diesel",
+      "subtitle": "Da 2.0 a 3.5 ton",
+      "capacityRange": "2000-3500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/diesel-da-2-0-a-3-5-ton/",
+      "parentCategory": "controbilanciati-termici",
+      "images": {},
+      "models": [
+        {
+          "name": "DP20N3",
+          "capacity_kg": 2000,
+          "loadCenter_mm": 500,
+          "battery": null,
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/diesel-2.0-3.5/DP20-35N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP25N3",
+          "capacity_kg": 2500,
+          "loadCenter_mm": 500,
+          "battery": null,
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/diesel-2.0-3.5/DP20-35N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP30N3",
+          "capacity_kg": 3000,
+          "loadCenter_mm": 500,
+          "battery": null,
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/diesel-2.0-3.5/DP20-35N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP35N3",
+          "capacity_kg": 3500,
+          "loadCenter_mm": 500,
+          "battery": null,
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/diesel-2.0-3.5/DP20-35N3-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "diesel-4.0-5.5",
+      "title": "Diesel",
+      "subtitle": "Da 4.0 a 5.5 ton",
+      "capacityRange": "4000-5500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/diesel-da-4-0-a-5-5-ton/",
+      "parentCategory": "controbilanciati-termici",
+      "images": {},
+      "models": [
+        {
+          "name": "DP40N3",
+          "capacity_kg": 4000,
+          "loadCenter_mm": 500,
+          "battery": null,
+          "maxLiftHeight_mm": 6000,
+          "image": "/images/catalog/diesel-4.0-5.5/DP40-55N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP45N3",
+          "capacity_kg": 4500,
+          "loadCenter_mm": 500,
+          "battery": null,
+          "maxLiftHeight_mm": 6000,
+          "image": "/images/catalog/diesel-4.0-5.5/DP40-55N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP50CN3",
+          "capacity_kg": 5000,
+          "loadCenter_mm": 500,
+          "battery": null,
+          "maxLiftHeight_mm": 7000,
+          "image": "/images/catalog/diesel-4.0-5.5/DP40-55N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP50N3",
+          "capacity_kg": 5000,
+          "loadCenter_mm": 600,
+          "battery": null,
+          "maxLiftHeight_mm": 6000,
+          "image": "/images/catalog/diesel-4.0-5.5/DP40-55N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP55N3",
+          "capacity_kg": 5500,
+          "loadCenter_mm": 600,
+          "battery": null,
+          "maxLiftHeight_mm": 6000,
+          "image": "/images/catalog/diesel-4.0-5.5/DP40-55N3-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "diesel-6.0-10",
+      "title": "Diesel",
+      "subtitle": "Da 6.0 a 10 ton",
+      "capacityRange": "6000-10000 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/diesel-da-6-0-a-10-ton/",
+      "parentCategory": "controbilanciati-termici",
+      "images": {},
+      "models": [
+        {
+          "name": "DP60N3",
+          "capacity_kg": 6000,
+          "loadCenter_mm": 600,
+          "battery": null,
+          "maxLiftHeight_mm": 8000,
+          "image": "/images/catalog/diesel-6.0-10/DP60-100N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP70N3",
+          "capacity_kg": 7000,
+          "loadCenter_mm": 600,
+          "battery": null,
+          "maxLiftHeight_mm": 8000,
+          "image": "/images/catalog/diesel-6.0-10/DP60-100N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP80N3",
+          "capacity_kg": 8000,
+          "loadCenter_mm": 600,
+          "battery": null,
+          "maxLiftHeight_mm": 8000,
+          "image": "/images/catalog/diesel-6.0-10/DP60-100N3-product.png",
+          "brochure": null
+        },
+        {
+          "name": "DP100N3",
+          "capacity_kg": 10000,
+          "loadCenter_mm": 600,
+          "battery": null,
+          "maxLiftHeight_mm": 6000,
+          "image": "/images/catalog/diesel-6.0-10/DP60-100N3-product.png",
+          "brochure": null
+        }
+      ]
+    },
+    {
+      "slug": "controbilanciati-termici",
+      "title": "Carrelli Termici A Diesel/GPL",
+      "subtitle": "Soluzione resistente ed adattabile per applicazioni di lavoro all'esterno",
+      "capacityRange": "1500-5500 kg",
+      "sourceUrl": "https://www.nuovatcmservice.com/controbilanciati-termici-generico/",
+      "isParentCategory": true,
+      "subcategories": [
+        "diesel-2.0-3.5",
+        "diesel-4.0-5.5",
+        "diesel-6.0-10"
+      ],
+      "images": {
+        "catDiesel20_35": "/images/catalog/controbilanciati-termici/diesel-2.0-3.5-cat.png",
+        "catDiesel40_55": "/images/catalog/controbilanciati-termici/diesel-4.0-5.5-cat.png",
+        "catDiesel60_10": "/images/catalog/controbilanciati-termici/diesel-6.0-10-cat.png"
+      },
+      "models": []
+    },
+    {
+      "slug": "carrelli-usati",
+      "title": "Carrelli elevatori Usati",
+      "subtitle": "Trova qui i carrelli elevatori usati che fanno per te",
+      "sourceUrl": "https://www.nuovatcmservice.com/carrelli-usati/",
+      "images": {
+        "hero": "/images/catalog/carrelli-usati/usati-hero.png"
+      },
+      "models": [
+        {
+          "name": "CAT EP25ACN",
+          "type": "Electric",
+          "mast": "SIMPLEX 3300",
+          "image": "/images/catalog/carrelli-usati/cat-ep25acn.jpg"
+        },
+        {
+          "name": "CAT DP25N3",
+          "type": "Diesel",
+          "mast": "SIMPLEX 4500",
+          "image": "/images/catalog/carrelli-usati/cat-dp25n3.jpg"
+        },
+        {
+          "name": "CAT NPP16",
+          "type": "Electric",
+          "capacity_kg": 1600,
+          "image": "/images/catalog/carrelli-usati/cat-npp16.jpg"
+        },
+        {
+          "name": "LINDE H30D EVO",
+          "type": "Diesel",
+          "year": 2018,
+          "mast": "SIMPLEX 4500mm",
+          "image": "/images/catalog/carrelli-usati/linde-h30d-evo.jpg"
+        },
+        {
+          "name": "LINDE H30D",
+          "type": "Diesel",
+          "status": "In Arrivo",
+          "image": "/images/catalog/carrelli-usati/linde-h30d-2298.jpg"
+        },
+        {
+          "name": "Mitsubishi 25",
+          "type": "Electric",
+          "ref": "RIF 2968",
+          "mast": "SIMPLEX 5000mm",
+          "image": "/images/catalog/carrelli-usati/mitsubishi-25-2968.jpg"
+        },
+        {
+          "name": "Nissan 25",
+          "type": "Electric",
+          "ref": "RIF 2936",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/nissan-25-2936.jpg"
+        },
+        {
+          "name": "Still 25",
+          "type": "Electric",
+          "ref": "RIF 2962",
+          "mast": "TRIPLEX 5150mm",
+          "image": "/images/catalog/carrelli-usati/still-25-2962.jpg"
+        },
+        {
+          "name": "Still R50-17",
+          "type": "Electric",
+          "mast": "TRIPLEX 6000mm",
+          "image": "/images/catalog/carrelli-usati/still-r50-17.jpg"
+        },
+        {
+          "name": "CAT EP30N",
+          "type": "Electric",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/cat-ep30n.jpg"
+        },
+        {
+          "name": "Nissan 25",
+          "type": "Electric",
+          "ref": "RIF 2980",
+          "mast": "SIMPLEX 4500mm",
+          "image": "/images/catalog/carrelli-usati/nissan-25-2980.jpg"
+        },
+        {
+          "name": "Cesab BIT 10",
+          "type": "Electric",
+          "ref": "RIF 2891",
+          "mast": "TRIPLEX 5000mm",
+          "image": "/images/catalog/carrelli-usati/cesab-bit10.jpg"
+        },
+        {
+          "name": "Cesab ECO 40",
+          "type": "Electric",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/cesab-eco40.jpg"
+        },
+        {
+          "name": "LINDE H30D",
+          "type": "Diesel",
+          "ref": "RIF 2298",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/linde-h30d-2298.jpg"
+        },
+        {
+          "name": "Lugli ELX 25",
+          "type": "Electric",
+          "ref": "RIF 2685",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/lugli-elx25.jpg"
+        },
+        {
+          "name": "CAT DP25",
+          "type": "Diesel",
+          "ref": "RIF 56663",
+          "mast": "SIMPLEX 4500mm",
+          "image": "/images/catalog/carrelli-usati/cat-dp25-56663.jpg"
+        },
+        {
+          "name": "CAT DP30",
+          "type": "Diesel",
+          "ref": "RIF 05353",
+          "mast": "TRIPLEX 4800mm",
+          "image": "/images/catalog/carrelli-usati/cat-dp30-05353.jpg"
+        },
+        {
+          "name": "CAT DP30",
+          "type": "Diesel",
+          "ref": "RIF 05546",
+          "mast": "SIMPLEX 4500mm",
+          "image": "/images/catalog/carrelli-usati/cat-dp30-05546.jpg"
+        },
+        {
+          "name": "CAT DP30",
+          "type": "Diesel",
+          "ref": "RIF 04580",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/cat-dp30-04580.jpg"
+        },
+        {
+          "name": "Maximal FD 30",
+          "type": "Diesel",
+          "ref": "RIF 2919",
+          "mast": "TRIPLEX 4800mm",
+          "image": "/images/catalog/carrelli-usati/maximal-fd30.jpg"
+        },
+        {
+          "name": "DP35NT",
+          "type": "Diesel",
+          "ref": "RIF 2438-53420",
+          "mast": "SIMPLEX 4500mm",
+          "image": "/images/catalog/carrelli-usati/dp35nt.jpg"
+        },
+        {
+          "name": "Nissan DX18",
+          "type": "Diesel",
+          "ref": "RIF 2931",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/nissan-dx18.jpg"
+        },
+        {
+          "name": "LINDE H30D EVO CABINA",
+          "type": "Diesel",
+          "mast": "4000mm",
+          "features": "Cabina riscaldata",
+          "image": "/images/catalog/carrelli-usati/linde-h30d-evo-cabina.jpg"
+        },
+        {
+          "name": "LINDE T16",
+          "type": "Electric",
+          "ref": "RIF 3001",
+          "battery": "24V Charger",
+          "image": "/images/catalog/carrelli-usati/linde-t16.jpg"
+        },
+        {
+          "name": "Nissan DX 30",
+          "type": "Diesel",
+          "ref": "RIF 2349-704000",
+          "mast": "TRIPLEX 4300mm",
+          "image": "/images/catalog/carrelli-usati/nissan-dx30-704000.jpg"
+        },
+        {
+          "name": "Nissan DX 30",
+          "type": "Diesel",
+          "ref": "RIF 2354-704019",
+          "mast": "TRIPLEX 4300mm",
+          "image": "/images/catalog/carrelli-usati/nissan-dx30-704019.jpg"
+        },
+        {
+          "name": "Nissan 15 Q.LI",
+          "type": "Electric",
+          "ref": "RIF 2626-001792",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/nissan-15-001792.jpg"
+        },
+        {
+          "name": "Mitsubishi 25K",
+          "type": "Diesel",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/mitsubishi-25k-1.jpg"
+        },
+        {
+          "name": "Mitsubishi 25K",
+          "type": "Diesel",
+          "ref": "RIF 3017",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/mitsubishi-25k-2.jpg"
+        },
+        {
+          "name": "Nissan GN18 HQ",
+          "type": "Diesel",
+          "ref": "RIF 2852",
+          "mast": "SIMPLEX 4500mm",
+          "image": "/images/catalog/carrelli-usati/nissan-gn18hq.jpg"
+        },
+        {
+          "name": "Nissan 18 Q.LI",
+          "type": "Electric",
+          "ref": "RIF 2347",
+          "mast": "SIMPLEX 3300mm",
+          "image": "/images/catalog/carrelli-usati/nissan-18-2347.jpg"
+        },
+        {
+          "name": "Lavapavimenti",
+          "type": "Floor Cleaner",
+          "ref": "RIF NR530",
+          "image": "/images/catalog/carrelli-usati/lavapavimenti.jpg"
+        },
+        {
+          "name": "Cesab",
+          "type": "Electric",
+          "ref": "RIF 2896",
+          "mast": "TRIPLEX 4500mm",
+          "image": "/images/catalog/carrelli-usati/cesab-2896.jpg"
+        },
+        {
+          "name": "Lugli ELX 30",
+          "type": "Electric",
+          "ref": "RIF 90223",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/lugli-elx30.jpg"
+        },
+        {
+          "name": "Mitsubishi FB25",
+          "type": "Electric",
+          "ref": "RIF 2803",
+          "mast": "SIMPLEX 4000mm",
+          "image": "/images/catalog/carrelli-usati/mitsubishi-fb25.jpg"
+        }
+      ]
+    }
+  ],
+  "brochures": [
+    {
+      "model": "NR14-16N2L",
+      "path": "/brochures/ST-NR14-16N2L.pdf",
+      "sourceUrl": "https://www.nuovatcmservice.com/wp-content/uploads/2025/01/ST-NR14-16N2L.pdf"
+    },
+    {
+      "model": "NR14-25(S)(C)(H)(X)N2",
+      "path": "/brochures/ST-NR14-25SCHXN2.pdf",
+      "sourceUrl": "https://www.nuovatcmservice.com/wp-content/uploads/2025/01/ST-NR14-25SCHXN2.pdf"
+    },
+    {
+      "model": "NR12-14N3(L)(C)",
+      "path": "/brochures/ST-NR12-14N3LC.pdf",
+      "sourceUrl": "https://www.nuovatcmservice.com/wp-content/uploads/2025/01/ST-NR12-14N3LC.pdf"
+    },
+    {
+      "model": "NR16-25N3(H)(X)",
+      "path": "/brochures/ST-NR16-25N3HX.pdf",
+      "sourceUrl": "https://www.nuovatcmservice.com/wp-content/uploads/2025/01/ST-NR16-25N3HX.pdf"
+    }
+  ],
+  "scrapedAt": "2026-03-16",
+  "totalModelsNew": 62,
+  "totalModelsUsed": 35,
+  "totalImages": 90
+}
