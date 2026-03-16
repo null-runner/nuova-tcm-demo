@@ -15,10 +15,11 @@ export default function HeroVideo() {
     <video
       ref={videoRef}
       muted
+      loop
       playsInline
       className="w-full max-w-2xl mix-blend-multiply"
     >
-      <source src="/images/hero-forklift-sq.mp4" type="video/mp4" />
+      <source src="/images/hero-forklift-sq-loop.mp4" type="video/mp4" />
     </video>
   );
 }
