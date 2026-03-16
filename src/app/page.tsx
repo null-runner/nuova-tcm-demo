@@ -347,7 +347,7 @@ export default function Home() {
             {steps.map((item, j) => (
               <AnimatedSection key={item.step} delay={j * 0.1}>
                 <div className="text-center">
-                  <p className="font-display text-5xl font-bold text-gray-100 mb-4">
+                  <p className="font-display text-5xl font-bold text-gray-300 mb-4">
                     {item.step}
                   </p>
                   <div className="w-14 h-14 bg-brand-dark rounded-xl flex items-center justify-center mx-auto mb-4">
