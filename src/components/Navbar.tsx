@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, Phone } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -15,63 +15,97 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-navy-950/95 backdrop-blur-md border-b border-navy-800/50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-brand-dark/98 backdrop-blur-sm border-b border-white/5"
+          : "bg-transparent"
+      }`}
+    >
+      {/* Top bar with phone */}
+      <div
+        className={`border-b border-white/5 transition-all duration-300 ${
+          scrolled ? "h-0 overflow-hidden opacity-0" : "h-auto opacity-100"
+        }`}
+      >
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-2 flex justify-end">
+          <a
+            href="tel:+390536800034"
+            className="flex items-center gap-2 text-brand-text-muted hover:text-white transition-colors text-xs font-mono tracking-wide"
+          >
+            <Phone size={12} />
+            +39 0536 800034
+          </a>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-safety-yellow rounded-lg flex items-center justify-center font-display font-bold text-navy-950 text-lg group-hover:scale-105 transition-transform">
-              TCM
+            <div className="w-9 h-9 border-2 border-brand-accent rounded flex items-center justify-center">
+              <span className="font-mono text-brand-accent text-xs font-medium tracking-tight">
+                TCM
+              </span>
             </div>
-            <div className="hidden sm:block">
-              <p className="font-display font-semibold text-white text-sm leading-tight">
+            <div>
+              <p className="font-display text-white text-lg leading-none">
                 Nuova T.C.M.
               </p>
-              <p className="text-navy-300 text-xs tracking-wider uppercase">
-                Service
+              <p className="text-brand-text-muted text-[10px] tracking-[0.2em] uppercase font-mono mt-0.5">
+                Service S.r.l.
               </p>
             </div>
           </Link>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 text-sm font-medium text-navy-200 hover:text-safety-yellow transition-colors rounded-lg hover:bg-navy-800/50"
+                className="px-4 py-2 text-[13px] font-medium text-brand-text-muted hover:text-white transition-colors tracking-wide"
               >
                 {link.label}
               </Link>
             ))}
           </div>
 
-          {/* CTA + Phone */}
-          <div className="hidden md:flex items-center gap-4">
+          {/* Desktop CTA */}
+          <div className="hidden lg:flex items-center gap-5">
             <a
               href="tel:+390536800034"
-              className="flex items-center gap-2 text-white hover:text-safety-yellow transition-colors text-sm font-medium"
+              className={`flex items-center gap-2 text-white text-sm font-medium transition-all ${
+                scrolled ? "opacity-100" : "opacity-0 pointer-events-none"
+              }`}
             >
-              <Phone size={16} className="text-safety-yellow" />
-              0536 800034
+              <Phone size={14} className="text-brand-accent" />
+              <span className="font-mono text-xs">0536 800034</span>
             </a>
             <Link
               href="/contatti"
-              className="bg-safety-yellow hover:bg-safety-amber text-navy-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-all hover:shadow-lg hover:shadow-safety-yellow/20"
+              className="bg-brand-accent hover:bg-brand-accent-hover text-white text-[13px] font-medium px-5 py-2.5 transition-colors tracking-wide"
             >
-              Richiedi Intervento
+              Parla con un Esperto
             </Link>
           </div>
 
           {/* Mobile Toggle */}
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden text-white p-2"
+            className="lg:hidden text-white p-2"
             aria-label={open ? "Chiudi menu" : "Apri menu"}
           >
-            {open ? <X size={24} /> : <Menu size={24} />}
+            {open ? <X size={22} /> : <Menu size={22} />}
           </button>
         </div>
       </div>
@@ -83,33 +117,33 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-navy-950 border-t border-navy-800/50 overflow-hidden"
+            className="lg:hidden bg-brand-dark border-t border-white/5 overflow-hidden"
           >
-            <div className="px-4 py-4 space-y-1">
+            <div className="px-6 py-6 space-y-1">
               {links.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block px-4 py-3 text-navy-200 hover:text-safety-yellow hover:bg-navy-900 rounded-lg transition-colors"
+                  className="block px-3 py-3 text-brand-text-muted hover:text-white transition-colors text-sm"
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-4 border-t border-navy-800 mt-4">
+              <div className="pt-5 mt-5 border-t border-white/5 space-y-3">
                 <a
                   href="tel:+390536800034"
-                  className="flex items-center gap-2 text-navy-300 px-4 py-3"
+                  className="flex items-center gap-2 text-brand-text-muted px-3 py-2 text-sm"
                 >
-                  <Phone size={16} />
-                  0536 800034
+                  <Phone size={14} className="text-brand-accent" />
+                  +39 0536 800034
                 </a>
                 <Link
                   href="/contatti"
                   onClick={() => setOpen(false)}
-                  className="block bg-safety-yellow text-navy-950 font-semibold px-4 py-3 rounded-lg text-center mt-2"
+                  className="block bg-brand-accent text-white font-medium px-3 py-3 text-sm text-center"
                 >
-                  Preventivo Gratuito
+                  Parla con un Esperto
                 </Link>
               </div>
             </div>

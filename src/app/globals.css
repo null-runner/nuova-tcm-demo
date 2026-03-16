@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --navy-950: #0a1929;
-  --navy-900: #102a43;
-  --navy-800: #243b53;
-  --navy-700: #334e68;
-  --navy-600: #486581;
-  --navy-100: #d9e2ec;
-  --navy-50: #f0f4f8;
-  --safety-yellow: #F5A623;
-  --safety-amber: #E8952E;
-  --white: #ffffff;
+  --brand-dark: #0A0F1A;
+  --brand-surface: #111827;
+  --brand-elevated: #1F2937;
+  --brand-muted: #374151;
+  --brand-accent: #D4850F;
+  --brand-accent-hover: #B8740D;
+  --brand-text: #F9FAFB;
+  --brand-text-muted: #9CA3AF;
+  --brand-light: #F9FAFB;
 }
 
 html {
@@ -20,51 +19,33 @@ html {
 }
 
 body {
-  color: var(--navy-900);
-  background: var(--white);
+  color: #1F2937;
+  background: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Diagonal section divider */
-.diagonal-top {
-  clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F9FAFB;
+}
+::-webkit-scrollbar-thumb {
+  background: #D1D5DB;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
 }
 
-.diagonal-top-sm {
-  clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
-}
-
-/* Grain texture overlay */
+/* Subtle grain overlay for dark sections */
 .grain::after {
   content: '';
   position: absolute;
   inset: 0;
-  opacity: 0.03;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  opacity: 0.015;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   pointer-events: none;
-}
-
-/* Animated counter */
-@keyframes countUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--navy-50);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--navy-300, #9fb3c8);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--navy-600);
 }

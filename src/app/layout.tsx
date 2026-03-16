@@ -1,20 +1,26 @@
 import type { Metadata } from "next";
-import { DM_Sans, Outfit } from "next/font/google";
+import { Inter, DM_Serif_Display, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
 
-const display = Outfit({
+const display = DM_Serif_Display({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400"],
+  style: ["normal", "italic"],
 });
 
-const body = DM_Sans({
+const body = Inter({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600"],
+});
+
+const mono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+  weight: ["400", "500"],
 });
 
 export const metadata: Metadata = {
@@ -25,13 +31,13 @@ export const metadata: Metadata = {
   description:
     "Riparazioni entro 24h, gestione flotta, batterie industriali. Dealer Cat® Lift Trucks a Sassuolo dal 1994. Un referente per tutta la tua flotta.",
   keywords: [
-    "carrelli elevatori",
-    "Sassuolo",
-    "noleggio carrelli",
-    "Cat Lift Trucks",
+    "carrelli elevatori Sassuolo",
+    "assistenza carrelli elevatori Modena",
+    "noleggio carrelli elevatori",
+    "Cat Lift Trucks dealer Italia",
     "riparazione carrelli elevatori",
     "batterie industriali",
-    "Modena",
+    "gestione flotta carrelli",
   ],
   openGraph: {
     type: "website",
@@ -45,7 +51,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Nuova T.C.M. Service S.r.l.",
   description:
-    "Vendita, noleggio e riparazione carrelli elevatori. Dealer ufficiale Cat® Lift Trucks.",
+    "Assistenza, vendita e noleggio carrelli elevatori. Dealer ufficiale Cat® Lift Trucks a Sassuolo dal 1994.",
   url: "https://www.nuovatcmservice.com",
   telephone: "+390536800034",
   email: "info@nuovatcmservice.com",
@@ -76,7 +82,7 @@ const localBusinessSchema = {
       closes: "18:00",
     },
   ],
-  priceRange: "€€",
+  priceRange: "$$",
 };
 
 export default function RootLayout({
@@ -94,11 +100,12 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${display.variable} ${body.variable} font-body antialiased`}>
+      <body
+        className={`${display.variable} ${body.variable} ${mono.variable} font-body antialiased`}
+      >
         <Navbar />
         <main>{children}</main>
         <Footer />
-        <WhatsAppButton />
       </body>
     </html>
   );
