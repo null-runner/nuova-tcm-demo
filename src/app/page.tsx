@@ -23,21 +23,21 @@ import HeroVideo from "@/components/HeroVideo";
 const painPoints = [
   {
     icon: Clock,
-    title: "Tempi di intervento che fanno la differenza",
+    title: "Tempi di risposta reali",
     description:
-      "Un carrello fermo e una linea di produzione ferma. Il nostro tempo medio di intervento e di 24 ore, perche operiamo direttamente sul territorio emiliano.",
+      "Sappiamo cosa significa avere un carrello fermo in produzione. Il nostro tempo medio di intervento e di 24 ore perche operiamo direttamente sul territorio, non da un ufficio a centinaia di chilometri.",
   },
   {
     icon: Users,
-    title: "Un unico interlocutore per tutta la flotta",
+    title: "Un solo referente per tutto",
     description:
-      "Carrelli, batterie, ricambi, manutenzione. Un solo contratto, un solo referente che conosce i tuoi impianti e le tue esigenze operative.",
+      "Carrelli, batterie, ricambi, manutenzione. Non dovete coordinare tre fornitori diversi. Con noi avete un unico interlocutore che conosce i vostri impianti e vi segue nel tempo.",
   },
   {
     icon: BarChart3,
-    title: "Decisioni basate su dati tecnici",
+    title: "Gestione della flotta basata sui dati",
     description:
-      "Analisi dello stato della flotta, cicli batteria, costi di manutenzione. Forniamo le informazioni per pianificare interventi e sostituzioni in modo consapevole.",
+      "Monitoriamo lo stato dei veicoli e delle batterie per aiutarvi a pianificare interventi e sostituzioni. Meno sorprese, meno fermi, costi sotto controllo.",
   },
 ];
 
@@ -88,18 +88,18 @@ const services = [
 const differentiators = [
   {
     icon: Clock,
-    title: "Presenza territoriale",
-    text: "Sede a Sassuolo, operativi su tutta l'Emilia-Romagna. Chi risponde al telefono e la stessa persona che gestisce l'intervento.",
+    title: "Sul territorio, non al telefono",
+    text: "La nostra sede e a Sassuolo e operiamo su tutta l'Emilia-Romagna. Chi vi risponde e la stessa persona che gestisce l'intervento. Nessun passaggio intermedio.",
   },
   {
     icon: Shield,
-    title: "Competenza certificata",
-    text: "Dealer ufficiale Cat® Lift Trucks. Tecnici con formazione diretta in fabbrica e accesso a ricambi originali e documentazione tecnica.",
+    title: "Dealer ufficiale Cat® Lift Trucks",
+    text: "Tecnici formati direttamente in fabbrica, ricambi originali, documentazione tecnica completa. La garanzia di un marchio globale con la reattivita di una struttura locale.",
   },
   {
     icon: MapPin,
-    title: "Approccio integrato",
-    text: "Carrelli, batterie, ricambi, gestione flotta. Un unico interlocutore con una visione completa delle vostre esigenze operative.",
+    title: "Trent'anni di esperienza industriale",
+    text: "Dal 1994 lavoriamo con le aziende del distretto ceramico e manifatturiero. Conosciamo le esigenze operative perche le viviamo ogni giorno sul campo.",
   },
 ];
 
@@ -215,10 +215,10 @@ export default function Home() {
           <AnimatedSection>
             <div className="max-w-2xl mb-14">
               <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
-                Il valore aggiunto
+                Perche le aziende ci scelgono
               </p>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated">
-                Tre motivi per cui le aziende ci scelgono
+                Chi gestisce una flotta sa quanto conta avere il partner giusto
               </h2>
             </div>
           </AnimatedSection>
@@ -384,10 +384,10 @@ export default function Home() {
 
             <AnimatedSection delay={0.1}>
               <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
-                Perche scegliere Nuova T.C.M.
+                Il nostro approccio
               </p>
               <h2 className="font-display text-3xl font-bold text-brand-elevated mb-10">
-                L&apos;affidabilita di una struttura locale con la competenza di un dealer ufficiale.
+                La competenza di un dealer ufficiale. La reattivita di chi e sul territorio.
               </h2>
 
               <div className="space-y-8">
@@ -488,12 +488,12 @@ export default function Home() {
               Contatti
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated mb-6">
-              Parliamo delle vostre esigenze
+              Volete sapere cosa possiamo fare per la vostra flotta?
             </h2>
             <p className="text-gray-500 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
-              Contattateci per una consulenza tecnica sulla vostra flotta.
-              Analizziamo la situazione attuale e proponiamo le soluzioni
-              piu adatte alle vostre esigenze operative.
+              Contattateci per una consulenza tecnica. Analizziamo la vostra
+              situazione attuale e vi proponiamo le soluzioni piu adatte,
+              senza impegno.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

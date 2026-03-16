@@ -52,16 +52,19 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 border-2 border-[#ECAA0D] rounded flex items-center justify-center bg-[#ECAA0D]">
-              <span className="font-mono text-white text-xs font-bold tracking-tight">
-                TCM
-              </span>
+            <div className="relative w-10 h-10">
+              <div className="absolute inset-0 bg-brand-elevated rounded-lg" />
+              <div className="absolute inset-[2px] bg-[#ECAA0D] rounded-md flex items-center justify-center">
+                <span className="font-display text-brand-elevated text-[11px] font-extrabold tracking-wider">
+                  TCM
+                </span>
+              </div>
             </div>
             <div>
-              <p className="font-display text-brand-elevated text-lg font-semibold leading-none">
-                Nuova T.C.M.
+              <p className="font-display text-brand-elevated text-[17px] font-bold leading-none tracking-tight">
+                NUOVA T.C.M.
               </p>
-              <p className="text-gray-400 text-[10px] tracking-[0.2em] uppercase font-mono mt-0.5">
+              <p className="text-gray-400 text-[9px] tracking-[0.25em] uppercase mt-0.5">
                 Service S.r.l.
               </p>
             </div>

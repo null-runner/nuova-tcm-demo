@@ -9,16 +9,19 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-9 h-9 border-2 border-brand-accent rounded flex items-center justify-center">
-                <span className="font-mono text-brand-accent text-xs font-medium tracking-tight">
-                  TCM
-                </span>
+              <div className="relative w-10 h-10">
+                <div className="absolute inset-0 bg-white/10 rounded-lg" />
+                <div className="absolute inset-[2px] bg-[#ECAA0D] rounded-md flex items-center justify-center">
+                  <span className="font-display text-brand-dark text-[11px] font-extrabold tracking-wider">
+                    TCM
+                  </span>
+                </div>
               </div>
               <div>
-                <p className="font-display text-white text-lg leading-none">
-                  Nuova T.C.M.
+                <p className="font-display text-white text-[17px] font-bold leading-none tracking-tight">
+                  NUOVA T.C.M.
                 </p>
-                <p className="text-brand-text-muted text-[10px] tracking-[0.2em] uppercase font-mono mt-0.5">
+                <p className="text-brand-text-muted text-[9px] tracking-[0.25em] uppercase mt-0.5">
                   Service S.r.l.
                 </p>
               </div>
