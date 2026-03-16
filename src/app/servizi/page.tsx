@@ -4,10 +4,12 @@ import {
   Truck,
   Wrench,
   Battery,
+  Phone,
   ClipboardCheck,
   ArrowRight,
   Check,
   RotateCw,
+  Settings,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
@@ -15,58 +17,58 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "Servizi",
   description:
-    "Vendita, noleggio a breve e lungo termine, riparazione e assistenza carrelli elevatori. Batterie industriali e navette automatiche. Sassuolo, Modena.",
+    "Riparazione, noleggio, acquisto carrelli elevatori e batterie industriali in Emilia-Romagna. Dealer CAT® Lift Trucks. Un unico referente per tutta la flotta.",
 };
 
 const serviceBlocks = [
   {
-    id: "vendita",
-    icon: Truck,
-    title: "Vendita e Noleggio",
-    subtitle: "Carrelli nuovi e usati CAT® Lift Trucks",
-    description:
-      "Offriamo una gamma completa di carrelli elevatori CAT® Lift Trucks — dai transpallet ai controbilanciati termici. Ogni carrello viene consegnato revisionato e con garanzia.",
-    features: [
-      "Transpallet manuali ed elettrici",
-      "Carrelli stoccatori e commissionatori",
-      "Carrelli retrattili e trilaterali",
-      "Controbilanciati elettrici e diesel",
-      "Noleggio a breve termine (da 1 giorno)",
-      "Noleggio a lungo termine con manutenzione inclusa",
-    ],
-    image: "Carrelli CAT® in esposizione",
-  },
-  {
     id: "riparazione",
     icon: Wrench,
     title: "Riparazione e Assistenza",
-    subtitle: "Manutenzione ordinaria e straordinaria multimarca",
+    subtitle: "Il nostro servizio principale",
     description:
-      "Il nostro team di tecnici specializzati interviene direttamente presso la tua sede per ridurre al minimo i tempi di fermo. Lavoriamo su tutti i marchi con ricambi originali.",
+      "Un carrello fermo è una linea ferma. I nostri tecnici intervengono direttamente presso la vostra sede, su qualsiasi marca, con ricambi originali. Offriamo contratti di manutenzione programmata per ridurre i fermi imprevisti e tenere i costi sotto controllo.",
     features: [
-      "Assistenza in sede e fuori sede",
-      "Manutenzione programmata",
-      "Riparazioni d'emergenza entro 24h",
-      "Ricambi originali e compatibili",
-      "Revisioni periodiche certificate",
-      "Contratti di manutenzione personalizzati",
+      "Intervento in sede e fuori sede su tutta l'Emilia-Romagna",
+      "Manutenzione programmata con calendario concordato",
+      "Assistenza d'emergenza con tempo medio di risposta 24h",
+      "Ricambi originali CAT® e compatibili multimarca",
+      "Revisioni periodiche con documentazione certificata",
+      "Contratti personalizzati per flotte di qualsiasi dimensione",
     ],
     image: "Tecnico al lavoro su un carrello elevatore",
+  },
+  {
+    id: "vendita",
+    icon: Truck,
+    title: "Acquisto e Noleggio",
+    subtitle: "Carrelli nuovi e usati CAT® Lift Trucks",
+    description:
+      "Dalla scelta del mezzo alla consegna in stabilimento. Carrelli CAT® Lift Trucks nuovi e usati, noleggio a breve termine per gestire i picchi di lavoro, lungo termine con manutenzione inclusa per chi preferisce costi fissi e prevedibili.",
+    features: [
+      "Gamma completa CAT® Lift Trucks: transpallet, stoccatori, retrattili, controbilanciati",
+      "Carrelli usati revisionati con garanzia",
+      "Noleggio a breve termine (anche da 1 giorno)",
+      "Noleggio a lungo termine con manutenzione inclusa",
+      "Consegna e messa in servizio presso la vostra sede",
+      "Consulenza tecnica per la scelta del mezzo più adatto",
+    ],
+    image: "Carrelli CAT® Lift Trucks in esposizione",
   },
   {
     id: "batterie",
     icon: Battery,
     title: "Batterie Industriali",
-    subtitle: "Vendita, manutenzione e rigenerazione",
+    subtitle: "Analisi, manutenzione e fornitura",
     description:
-      "Le batterie sono il cuore dei carrelli elettrici. Offriamo un servizio completo: dalla vendita di batterie nuove alla rigenerazione delle esistenti, con analisi diagnostica inclusa.",
+      "La batteria è il componente più sottovalutato della flotta. Analizziamo lo stato di salute delle vostre batterie, rigeneriamo quelle recuperabili e forniamo quelle nuove. Qualsiasi tecnologia: piombo-acido, litio, sistemi AGV.",
     features: [
-      "Batterie al piombo-acido e al litio",
-      "Rigenerazione e ricondizionamento",
       "Analisi diagnostica e test di capacità",
+      "Rigenerazione e ricondizionamento batterie esistenti",
+      "Fornitura batterie nuove: piombo-acido e litio",
       "Caricabatterie industriali",
-      "Manutenzione preventiva",
-      "Navette automatiche e sistemi AGV",
+      "Manutenzione preventiva programmata",
+      "Compatibilità con navette automatiche e sistemi AGV",
     ],
     image: "Batterie industriali e stazione di ricarica",
   },
@@ -78,17 +80,17 @@ export default function Servizi() {
       {/* HERO */}
       <section className="bg-brand-dark pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
           <AnimatedSection>
-            <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
               Servizi
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
-              Assistenza completa per la vostra flotta
+              Meno fermi, meno fornitori, meno sorprese
             </h1>
             <p className="text-brand-text-muted text-lg max-w-2xl leading-relaxed">
-              Riparazione, noleggio, acquisto e batterie industriali. Un unico
-              referente per tutti gli aspetti della movimentazione.
+              Riparazione, gestione flotta, batterie e ricambi. Un unico
+              interlocutore per tutta la vostra movimentazione industriale.
             </p>
           </AnimatedSection>
         </div>
@@ -101,7 +103,7 @@ export default function Servizi() {
           id={service.id}
           className={`py-24 ${i % 2 === 0 ? "bg-white" : "bg-brand-light"}`}
         >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div
               className={`grid lg:grid-cols-2 gap-16 items-center ${
                 i % 2 !== 0 ? "lg:grid-flow-dense" : ""
@@ -117,9 +119,9 @@ export default function Servizi() {
               <AnimatedSection delay={0.15}>
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center">
-                    <service.icon size={24} className="text-brand-accent" />
+                    <service.icon size={24} className="text-brand-accent" strokeWidth={1.5} />
                   </div>
-                  <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase">
+                  <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase">
                     {service.subtitle}
                   </p>
                 </div>
@@ -138,6 +140,7 @@ export default function Servizi() {
                       <Check
                         size={18}
                         className="text-brand-accent shrink-0 mt-0.5"
+                        strokeWidth={1.5}
                       />
                       <span className="text-gray-700 text-sm">{feature}</span>
                     </li>
@@ -146,7 +149,7 @@ export default function Servizi() {
 
                 <Link
                   href="/contatti"
-                  className="inline-flex items-center gap-2 bg-brand-dark hover:bg-navy-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors group"
+                  className="inline-flex items-center gap-2 bg-brand-elevated hover:bg-brand-dark text-white font-semibold px-6 py-3 rounded-lg transition-colors group"
                 >
                   Richiedi informazioni
                   <ArrowRight
@@ -162,14 +165,14 @@ export default function Servizi() {
 
       {/* PROCESSO */}
       <section className="py-24 bg-brand-dark relative grain">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center max-w-2xl mx-auto mb-16">
-              <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase mb-3">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
                 Come lavoriamo
               </p>
               <h2 className="font-display text-3xl font-bold text-white mb-4">
-                Dal primo contatto alla soluzione
+                Quattro passaggi, zero complicazioni
               </h2>
             </div>
           </AnimatedSection>
@@ -178,27 +181,27 @@ export default function Servizi() {
             {[
               {
                 step: "01",
-                icon: ClipboardCheck,
-                title: "Analisi",
-                desc: "Ascoltiamo le vostre esigenze e valutiamo la soluzione più adatta.",
+                icon: Phone,
+                title: "Contatto",
+                desc: "Chiamateci o compilate il modulo. Vi rispondiamo direttamente noi.",
               },
               {
                 step: "02",
-                icon: Truck,
-                title: "Proposta",
-                desc: "Vi presentiamo le opzioni con un preventivo chiaro e dettagliato.",
+                icon: ClipboardCheck,
+                title: "Valutazione",
+                desc: "Analizziamo la vostra situazione e vi presentiamo un preventivo dettagliato.",
               },
               {
                 step: "03",
-                icon: Wrench,
-                title: "Consegna",
-                desc: "Carrello revisionato e consegnato presso la vostra sede, pronto all'uso.",
+                icon: Settings,
+                title: "Esecuzione",
+                desc: "Interveniamo con i tempi e le modalità concordate.",
               },
               {
                 step: "04",
                 icon: RotateCw,
-                title: "Assistenza",
-                desc: "Manutenzione continua e interventi rapidi per tutta la durata del servizio.",
+                title: "Continuità",
+                desc: "Manutenzione programmata e assistenza continua per prevenire i fermi.",
               },
             ].map((item, j) => (
               <AnimatedSection key={item.step} delay={j * 0.1}>
@@ -207,7 +210,7 @@ export default function Servizi() {
                     {item.step}
                   </p>
                   <div className="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                    <item.icon size={22} className="text-brand-accent" />
+                    <item.icon size={22} className="text-brand-accent" strokeWidth={1.5} />
                   </div>
                   <h3 className="font-display font-semibold text-white mb-2">
                     {item.title}
@@ -224,20 +227,20 @@ export default function Servizi() {
 
       {/* CTA */}
       <section className="py-20 bg-white">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-brand-elevated mb-6">
-              Volete saperne di più?
+              Avete una flotta da gestire? Parliamone.
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Contattateci per una consulenza tecnica. Analizziamo le vostre
-              esigenze e vi proponiamo la soluzione più adatta.
+              Contattateci per una valutazione tecnica. Vi diciamo cosa possiamo
+              fare per la vostra situazione specifica.
             </p>
             <Link
               href="/contatti"
-              className="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-elevated font-semibold px-8 py-4 rounded-lg transition-all hover:shadow-xl hover:shadow-brand-accent/20 group"
+              className="inline-flex items-center gap-2 bg-brand-elevated hover:bg-brand-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors group"
             >
-              Richiedi una Consulenza
+              Richiedi una valutazione
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform"

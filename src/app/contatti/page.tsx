@@ -6,7 +6,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contatti",
   description:
-    "Contatta Nuova T.C.M. Service per preventivi, noleggio e assistenza carrelli elevatori. Piazza Bernina 6, Sassuolo (MO). Tel: 0536 800034.",
+    "Contattate Nuova T.C.M. Service per consulenze, preventivi e assistenza carrelli elevatori. Piazza Bernina 6, Sassuolo (MO). Tel: 0536 800034.",
 };
 
 const contactInfo = [
@@ -22,14 +22,14 @@ const contactInfo = [
     title: "Email",
     value: "info@nuovatcmservice.com",
     href: "mailto:info@nuovatcmservice.com",
-    note: "Rispondiamo entro 24h",
+    note: "Rispondiamo entro 24 ore lavorative",
   },
   {
     icon: MapPin,
     title: "Sede",
     value: "Piazza Bernina 6, 41049 Sassuolo (MO)",
     href: "https://maps.google.com/?q=Piazza+Bernina+6+Sassuolo+MO",
-    note: "Nel cuore del distretto ceramico",
+    note: "Operativi su tutta l'Emilia-Romagna",
   },
   {
     icon: Clock,
@@ -45,17 +45,17 @@ export default function Contatti() {
       {/* HERO */}
       <section className="bg-brand-dark pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
           <AnimatedSection>
-            <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
               Contatti
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
-              Come possiamo aiutarvi?
+              Avete un problema con la flotta? Parlateci.
             </h1>
             <p className="text-brand-text-muted text-lg max-w-2xl leading-relaxed">
               Consulenze tecniche, preventivi, assistenza. Descriveteci la vostra
-              situazione e vi ricontattiamo entro 24 ore.
+              situazione e vi ricontattiamo entro 24 ore lavorative.
             </p>
           </AnimatedSection>
         </div>
@@ -63,16 +63,19 @@ export default function Contatti() {
 
       {/* CONTENT */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid lg:grid-cols-5 gap-16">
             {/* FORM */}
             <div className="lg:col-span-3">
               <AnimatedSection>
                 <h2 className="font-display text-2xl font-bold text-brand-elevated mb-2">
-                  Invia una richiesta
+                  Inviate una richiesta
                 </h2>
                 <p className="text-gray-600 text-sm mb-8">
-                  Compilate il modulo e vi ricontatteremo entro 24 ore lavorative.
+                  Compilate il modulo con le informazioni principali. Un nostro
+                  tecnico vi ricontatterà per approfondire la vostra situazione
+                  e proporvi le opzioni disponibili. Nessun obbligo, nessuna
+                  pressione commerciale.
                 </p>
                 <ContactForm />
               </AnimatedSection>
@@ -91,7 +94,7 @@ export default function Contatti() {
                       className="flex items-start gap-4 p-4 bg-brand-light rounded-lg border border-gray-100"
                     >
                       <div className="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center shrink-0">
-                        <info.icon size={18} className="text-brand-accent" />
+                        <info.icon size={18} className="text-brand-accent" strokeWidth={1.5} />
                       </div>
                       <div>
                         <p className="font-semibold text-brand-elevated text-sm">
@@ -125,12 +128,12 @@ export default function Contatti() {
                     <div className="text-center">
                       <MapPin
                         size={32}
-                        className="text-brand-text-muted mx-auto mb-2"
+                        className="text-gray-400 mx-auto mb-2"
                       />
                       <p className="text-gray-500 text-sm font-medium">
                         Google Maps
                       </p>
-                      <p className="text-brand-text-muted text-xs">
+                      <p className="text-gray-400 text-xs">
                         Piazza Bernina 6, Sassuolo
                       </p>
                     </div>

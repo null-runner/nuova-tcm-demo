@@ -7,55 +7,55 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "Catalogo Carrelli Elevatori",
   description:
-    "Scopri la gamma completa di carrelli elevatori CAT® Lift Trucks: transpallet, stoccatori, retrattili, controbilanciati. Nuovi e usati, disponibili a Sassuolo.",
+    "Carrelli elevatori CAT® Lift Trucks: transpallet, stoccatori, retrattili, controbilanciati. Nuovi, usati e a noleggio in Emilia-Romagna.",
 };
 
 const categories = [
   {
     title: "Transpallet Manuali",
-    description: "Soluzioni essenziali per la movimentazione leggera. Robusti, affidabili, zero manutenzione.",
+    description: "Per la movimentazione quotidiana senza complicazioni. Robusti, semplici, praticamente indistruttibili.",
     portata: "Fino a 2.500 kg",
     image: "Transpallet manuale CAT®",
   },
   {
     title: "Transpallet Elettrici",
-    description: "Movimentazione efficiente per magazzini ad alto volume. Batteria a lunga durata.",
+    description: "Quando i volumi aumentano e la movimentazione manuale non basta più. Autonomia estesa, manutenzione ridotta.",
     portata: "Fino a 2.500 kg",
     image: "Transpallet elettrico con operatore",
   },
   {
     title: "Carrelli Stoccatori",
-    description: "Stoccaggio in altezza con precisione. Ideali per corsie strette e scaffalature compatte.",
+    description: "Stoccaggio in altezza con precisione millimetrica. Progettati per corsie strette e scaffalature intensive.",
     portata: "Fino a 2.000 kg",
     image: "Stoccatore elettrico in magazzino",
   },
   {
     title: "Carrelli Retrattili",
-    description: "Massima efficienza in corsie strette. Altezze di sollevamento fino a 13 metri.",
+    description: "Per chi lavora in spazi ridotti con carichi importanti. Sollevamento fino a 13 metri in corsie da 2,5 m.",
     portata: "Fino a 2.500 kg",
     image: "Carrello retrattile in corsia",
   },
   {
     title: "Controbilanciati Elettrici",
-    description: "Zero emissioni, massima potenza. La scelta green per l'industria moderna.",
+    description: "Potenza senza emissioni. La scelta per chi opera in ambienti chiusi o ha obiettivi di sostenibilità.",
     portata: "Da 1,4 a 5,5 ton",
     image: "Controbilanciato elettrico CAT®",
   },
   {
     title: "Controbilanciati Diesel",
-    description: "Potenza senza compromessi per carichi pesanti e uso intensivo all'aperto.",
+    description: "Per carichi pesanti e uso intensivo all'aperto. Affidabilità in qualsiasi condizione operativa.",
     portata: "Da 2,0 a 10 ton",
     image: "Controbilanciato diesel al lavoro",
   },
   {
     title: "Commissionatori",
-    description: "Picking veloce e preciso. Orizzontali e verticali per ogni configurazione di magazzino.",
+    description: "Picking rapido e preciso. Configurazioni orizzontali e verticali per ogni layout di magazzino.",
     portata: "Fino a 1.500 kg",
     image: "Commissionatore in magazzino",
   },
   {
     title: "Carrelli Usati Garantiti",
-    description: "Revisionati dai nostri tecnici con garanzia inclusa. Il miglior rapporto qualità-prezzo.",
+    description: "Revisionati dai nostri tecnici, consegnati con garanzia. Il modo più conveniente per ampliare la flotta.",
     portata: "Varie portate",
     image: "Selezione carrelli usati revisionati",
   },
@@ -67,18 +67,17 @@ export default function Catalogo() {
       {/* HERO */}
       <section className="bg-brand-dark pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
           <AnimatedSection>
-            <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
               Catalogo
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
-              Carrelli elevatori{" "}
-              <span className="text-brand-accent">CAT® Lift Trucks</span>
+              Il carrello giusto per il vostro tipo di lavoro
             </h1>
             <p className="text-brand-text-muted text-lg max-w-2xl leading-relaxed">
-              Una soluzione per ogni esigenza di movimentazione. Nuovi, usati e a
-              noleggio, tutti con assistenza e ricambi garantiti.
+              Carrelli CAT® Lift Trucks nuovi, usati e a noleggio. Ogni mezzo
+              viene consegnato revisionato e con assistenza garantita.
             </p>
           </AnimatedSection>
         </div>
@@ -86,7 +85,7 @@ export default function Catalogo() {
 
       {/* GRIGLIA CATEGORIE */}
       <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {categories.map((cat, i) => (
               <AnimatedSection key={cat.title} delay={i * 0.05}>
@@ -124,20 +123,20 @@ export default function Catalogo() {
 
       {/* CTA */}
       <section className="py-20 bg-brand-light">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
             <h2 className="font-display text-3xl font-bold text-brand-elevated mb-4">
-              Non trovi quello che cerchi?
+              Non siete sicuri di quale carrello vi serva?
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Contattateci con le vostre specifiche e vi proponiamo il carrello
-              più adatto: nuovo, usato o a noleggio.
+              Descriveteci il vostro tipo di lavoro e vi consigliamo il mezzo
+              più adatto. Senza impegno.
             </p>
             <Link
               href="/contatti"
-              className="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-elevated font-semibold px-8 py-4 rounded-lg transition-all hover:shadow-xl hover:shadow-brand-accent/20 group"
+              className="inline-flex items-center gap-2 bg-brand-elevated hover:bg-brand-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors group"
             >
-              Chiedi una Consulenza
+              Chiedete un consiglio
               <ArrowRight
                 size={18}
                 className="group-hover:translate-x-1 transition-transform"
