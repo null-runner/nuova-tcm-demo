@@ -7,7 +7,7 @@
   --brand-surface: #111827;
   --brand-elevated: #1F2937;
   --brand-muted: #374151;
-  --brand-accent: #D4850F;
+  --brand-accent: #B87A0A;
   --brand-accent-hover: #B8740D;
   --brand-text: #F9FAFB;
   --brand-text-muted: #9CA3AF;
@@ -23,6 +23,21 @@ body {
   background: #FFFFFF;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Focus visible for accessibility */
+*:focus-visible {
+  outline: 2px solid #D4850F;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Custom scrollbar */

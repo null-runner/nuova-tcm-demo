@@ -15,7 +15,7 @@ const config: Config = {
           elevated: '#1F2937',
           muted: '#374151',
           border: '#1F2937',
-          accent: '#D4850F',
+          accent: '#B87A0A',
           'accent-hover': '#B8740D',
           'accent-subtle': 'rgba(212,133,15,0.08)',
           text: '#F9FAFB',

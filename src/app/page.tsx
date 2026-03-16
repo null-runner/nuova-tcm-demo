@@ -153,7 +153,7 @@ export default function Home() {
                 <span className="text-brand-accent">Noi siamo già in strada.</span>
               </h1>
 
-              <p className="text-gray-500 text-lg max-w-xl mb-10 leading-relaxed">
+              <p className="text-gray-600 text-lg max-w-xl mb-10 leading-relaxed">
                 Dealer ufficiale CAT® Lift Trucks dal 1994. Assistenza, gestione flotta
                 e batterie industriali per l&apos;industria manifatturiera emiliana.
               </p>
@@ -233,7 +233,7 @@ export default function Home() {
                   <h3 className="font-display text-lg font-semibold text-brand-elevated mb-3">
                     {pain.title}
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {pain.description}
                   </p>
                 </div>
@@ -290,6 +290,7 @@ export default function Home() {
                     width={500}
                     height={300}
                     className="rounded-xl object-cover opacity-60"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -356,7 +357,7 @@ export default function Home() {
                   <h3 className="font-display font-semibold text-brand-elevated text-lg mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">
+                  <p className="text-gray-600 text-sm leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -378,6 +379,7 @@ export default function Home() {
                   width={672}
                   height={448}
                   className="w-full h-auto object-cover"
+                  loading="lazy"
                 />
               </div>
             </AnimatedSection>
@@ -400,7 +402,7 @@ export default function Home() {
                       <h3 className="text-brand-elevated font-semibold mb-1">
                         {item.title}
                       </h3>
-                      <p className="text-gray-500 text-sm leading-relaxed">
+                      <p className="text-gray-600 text-sm leading-relaxed">
                         {item.text}
                       </p>
                     </div>
@@ -490,7 +492,7 @@ export default function Home() {
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated mb-6">
               Volete sapere cosa possiamo fare per la vostra flotta?
             </h2>
-            <p className="text-gray-500 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
+            <p className="text-gray-600 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
               Contattateci per una consulenza tecnica. Analizziamo la vostra
               situazione attuale e vi proponiamo le soluzioni più adatte,
               senza impegno.
