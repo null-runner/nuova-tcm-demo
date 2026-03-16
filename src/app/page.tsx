@@ -137,7 +137,12 @@ export default function Home() {
       <section className="relative flex items-center bg-white overflow-hidden pt-28 pb-16 lg:pt-32 lg:pb-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
-            <div>
+            {/* Video first on mobile, second on desktop */}
+            <div className="flex items-center justify-center lg:order-2">
+              <HeroVideo />
+            </div>
+
+            <div className="lg:order-1">
               <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-5">
                 Dealer ufficiale Cat® Lift Trucks · Dal 1994
               </p>
@@ -176,10 +181,6 @@ export default function Home() {
                 <span>✓ Multimarca</span>
                 <span>✓ Un solo referente</span>
               </div>
-            </div>
-
-            <div className="flex items-center justify-center">
-              <HeroVideo />
             </div>
           </div>
         </div>
