@@ -52,16 +52,16 @@ export default function Navbar() {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="tel:+390536800034"
-              className="flex items-center gap-2 text-navy-300 hover:text-white transition-colors text-sm"
+              className="flex items-center gap-2 text-white hover:text-safety-yellow transition-colors text-sm font-medium"
             >
-              <Phone size={16} />
+              <Phone size={16} className="text-safety-yellow" />
               0536 800034
             </a>
             <Link
               href="/contatti"
-              className="bg-safety-yellow hover:bg-safety-amber text-navy-950 font-semibold px-5 py-2.5 rounded-lg text-sm transition-all hover:shadow-lg hover:shadow-safety-yellow/20"
+              className="bg-safety-yellow hover:bg-safety-amber text-navy-950 font-bold px-5 py-2.5 rounded-lg text-sm transition-all hover:shadow-lg hover:shadow-safety-yellow/20"
             >
-              Preventivo Gratuito
+              Richiedi Intervento
             </Link>
           </div>
 

@@ -3,6 +3,7 @@ import { DM_Sans, Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const display = Outfit({
   subsets: ["latin"],
@@ -18,11 +19,11 @@ const body = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Nuova T.C.M. Service | Carrelli Elevatori Sassuolo",
+    default: "Assistenza Carrelli Elevatori Sassuolo | Nuova T.C.M. Service",
     template: "%s | Nuova T.C.M. Service",
   },
   description:
-    "Vendita, noleggio e riparazione carrelli elevatori a Sassuolo. Dealer ufficiale Cat® Lift Trucks. Oltre 30 anni di esperienza nel settore metalmeccanico.",
+    "Riparazioni entro 24h, gestione flotta, batterie industriali. Dealer Cat® Lift Trucks a Sassuolo dal 1994. Un referente per tutta la tua flotta.",
   keywords: [
     "carrelli elevatori",
     "Sassuolo",
@@ -97,6 +98,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <WhatsAppButton />
       </body>
     </html>
   );

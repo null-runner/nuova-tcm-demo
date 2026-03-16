@@ -4,8 +4,8 @@ import { useState, FormEvent } from "react";
 import { Send } from "lucide-react";
 
 const interests = [
-  "Vendita carrelli nuovi",
-  "Vendita carrelli usati",
+  "Acquisto carrelli nuovi",
+  "Acquisto carrelli usati",
   "Noleggio",
   "Riparazione / Assistenza",
   "Batterie industriali",
