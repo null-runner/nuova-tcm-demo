@@ -62,7 +62,7 @@ const differentiators = [
   {
     icon: Clock,
     title: "Intervento in 24 ore",
-    text: "Siamo a Sassuolo, nel cuore del distretto. Quando chiami, chi risponde e la stessa persona che viene a risolvere il problema.",
+    text: "Sede a Sassuolo, interventi su tutta l'Emilia-Romagna. Quando chiami, chi risponde e la stessa persona che viene a risolvere il problema.",
   },
   {
     icon: Shield,
@@ -100,12 +100,12 @@ export default function Home() {
             </p>
 
             <h1 className="font-display text-[2.75rem] sm:text-[3.5rem] lg:text-[4.25rem] text-white leading-[1.08] mb-8">
-              Assistenza carrelli elevatori nel distretto ceramico
+              Assistenza carrelli elevatori in Emilia-Romagna
             </h1>
 
             <p className="text-brand-text-muted text-lg max-w-xl mb-12 leading-relaxed">
               Riparazioni, gestione flotta e batterie industriali.
-              Un unico referente per tutta la tua flotta, a Sassuolo.
+              Da Sassuolo operiamo su tutta l&apos;Emilia-Romagna.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -316,7 +316,7 @@ export default function Home() {
                 {[
                   { label: "Partner ufficiale", value: "Cat® Lift Trucks" },
                   { label: "Certificazione", value: "ISO 9001" },
-                  { label: "Copertura", value: "Tutta Italia" },
+                  { label: "Copertura", value: "Emilia-Romagna" },
                   { label: "Intervento", value: "Entro 24 ore" },
                 ].map((item) => (
                   <div

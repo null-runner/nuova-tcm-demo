@@ -25,14 +25,18 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Assistenza Carrelli Elevatori Sassuolo | Nuova T.C.M. Service",
+    default: "Assistenza Carrelli Elevatori Emilia-Romagna | Nuova T.C.M. Service",
     template: "%s | Nuova T.C.M. Service",
   },
   description:
-    "Riparazioni entro 24h, gestione flotta, batterie industriali. Dealer Cat® Lift Trucks a Sassuolo dal 1994. Un referente per tutta la tua flotta.",
+    "Riparazioni entro 24h, gestione flotta, batterie industriali. Dealer Cat® Lift Trucks. Sede a Sassuolo, operiamo su tutta l'Emilia-Romagna.",
   keywords: [
     "carrelli elevatori Sassuolo",
     "assistenza carrelli elevatori Modena",
+    "carrelli elevatori Emilia-Romagna",
+    "assistenza carrelli elevatori Bologna",
+    "noleggio carrelli Reggio Emilia",
+    "carrelli elevatori Parma",
     "noleggio carrelli elevatori",
     "Cat Lift Trucks dealer Italia",
     "riparazione carrelli elevatori",
