@@ -65,18 +65,18 @@ export default function Catalogo() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-navy-950 pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(245,166,35,0.06),transparent_60%)]" />
+      <section className="bg-brand-dark pt-32 pb-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
-            <p className="text-safety-yellow font-semibold text-sm uppercase tracking-wider mb-4">
+            <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase mb-4">
               Catalogo
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
               Carrelli elevatori{" "}
-              <span className="text-safety-yellow">CAT® Lift Trucks</span>
+              <span className="text-brand-accent">CAT® Lift Trucks</span>
             </h1>
-            <p className="text-navy-300 text-lg max-w-2xl leading-relaxed">
+            <p className="text-brand-text-muted text-lg max-w-2xl leading-relaxed">
               Una soluzione per ogni esigenza di movimentazione. Nuovi, usati e a
               noleggio, tutti con assistenza e ricambi garantiti.
             </p>
@@ -90,26 +90,26 @@ export default function Catalogo() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {categories.map((cat, i) => (
               <AnimatedSection key={cat.title} delay={i * 0.05}>
-                <div className="group bg-white border border-navy-100 hover:border-safety-yellow/40 rounded-2xl overflow-hidden transition-all hover:shadow-lg hover:shadow-navy-100/50 h-full flex flex-col">
+                <div className="group bg-white border border-gray-100 hover:border-brand-accent/30 rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-gray-100/50 h-full flex flex-col">
                   <ImagePlaceholder
                     label={cat.image}
                     aspect="square"
                     className="rounded-none"
                   />
                   <div className="p-6 flex flex-col flex-1">
-                    <h2 className="font-display font-semibold text-navy-950 text-lg mb-2">
+                    <h2 className="font-display font-semibold text-brand-elevated text-lg mb-2">
                       {cat.title}
                     </h2>
-                    <p className="text-navy-600 text-sm leading-relaxed mb-4 flex-1">
+                    <p className="text-gray-600 text-sm leading-relaxed mb-4 flex-1">
                       {cat.description}
                     </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs font-medium text-navy-500 bg-navy-50 px-3 py-1 rounded-full">
+                      <span className="text-xs font-medium text-gray-500 bg-brand-light px-3 py-1 rounded-full">
                         {cat.portata}
                       </span>
                       <Link
                         href="/contatti"
-                        className="text-safety-amber hover:text-safety-gold text-sm font-medium group-hover:underline"
+                        className="text-brand-accent hover:text-brand-accent-hover text-sm font-medium group-hover:underline"
                       >
                         Info →
                       </Link>
@@ -123,19 +123,19 @@ export default function Catalogo() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-navy-50">
+      <section className="py-20 bg-brand-light">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-navy-950 mb-4">
+            <h2 className="font-display text-3xl font-bold text-brand-elevated mb-4">
               Non trovi quello che cerchi?
             </h2>
-            <p className="text-navy-600 mb-8 leading-relaxed">
+            <p className="text-gray-600 mb-8 leading-relaxed">
               Contattateci con le vostre specifiche e vi proponiamo il carrello
               più adatto: nuovo, usato o a noleggio.
             </p>
             <Link
               href="/contatti"
-              className="inline-flex items-center gap-2 bg-safety-yellow hover:bg-safety-amber text-navy-950 font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-xl hover:shadow-safety-yellow/20 group"
+              className="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-elevated font-semibold px-8 py-4 rounded-lg transition-all hover:shadow-xl hover:shadow-brand-accent/20 group"
             >
               Chiedi una Consulenza
               <ArrowRight

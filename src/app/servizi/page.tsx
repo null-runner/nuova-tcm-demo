@@ -76,17 +76,17 @@ export default function Servizi() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-navy-950 pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(245,166,35,0.06),transparent_60%)]" />
+      <section className="bg-brand-dark pt-32 pb-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
-            <p className="text-safety-yellow font-semibold text-sm uppercase tracking-wider mb-4">
+            <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase mb-4">
               Servizi
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
               Assistenza completa per la vostra flotta
             </h1>
-            <p className="text-navy-300 text-lg max-w-2xl leading-relaxed">
+            <p className="text-brand-text-muted text-lg max-w-2xl leading-relaxed">
               Riparazione, noleggio, acquisto e batterie industriali. Un unico
               referente per tutti gli aspetti della movimentazione.
             </p>
@@ -99,7 +99,7 @@ export default function Servizi() {
         <section
           key={service.id}
           id={service.id}
-          className={`py-24 ${i % 2 === 0 ? "bg-white" : "bg-navy-50/50"}`}
+          className={`py-24 ${i % 2 === 0 ? "bg-white" : "bg-brand-light"}`}
         >
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div
@@ -110,25 +110,25 @@ export default function Servizi() {
               <AnimatedSection className={i % 2 !== 0 ? "lg:col-start-2" : ""}>
                 <ImagePlaceholder
                   label={service.image}
-                  className="rounded-2xl"
+                  className="rounded-xl"
                 />
               </AnimatedSection>
 
               <AnimatedSection delay={0.15}>
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 bg-safety-yellow/10 rounded-xl flex items-center justify-center">
-                    <service.icon size={24} className="text-safety-amber" />
+                  <div className="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center">
+                    <service.icon size={24} className="text-brand-accent" />
                   </div>
-                  <p className="text-safety-amber font-semibold text-sm uppercase tracking-wider">
+                  <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase">
                     {service.subtitle}
                   </p>
                 </div>
 
-                <h2 className="font-display text-3xl font-bold text-navy-950 mb-4">
+                <h2 className="font-display text-3xl font-bold text-brand-elevated mb-4">
                   {service.title}
                 </h2>
 
-                <p className="text-navy-600 leading-relaxed mb-8">
+                <p className="text-gray-600 leading-relaxed mb-8">
                   {service.description}
                 </p>
 
@@ -137,16 +137,16 @@ export default function Servizi() {
                     <li key={feature} className="flex items-start gap-3">
                       <Check
                         size={18}
-                        className="text-safety-amber shrink-0 mt-0.5"
+                        className="text-brand-accent shrink-0 mt-0.5"
                       />
-                      <span className="text-navy-700 text-sm">{feature}</span>
+                      <span className="text-gray-700 text-sm">{feature}</span>
                     </li>
                   ))}
                 </ul>
 
                 <Link
                   href="/contatti"
-                  className="inline-flex items-center gap-2 bg-navy-950 hover:bg-navy-800 text-white font-semibold px-6 py-3 rounded-xl transition-colors group"
+                  className="inline-flex items-center gap-2 bg-brand-dark hover:bg-navy-800 text-white font-semibold px-6 py-3 rounded-lg transition-colors group"
                 >
                   Richiedi informazioni
                   <ArrowRight
@@ -161,11 +161,11 @@ export default function Servizi() {
       ))}
 
       {/* PROCESSO */}
-      <section className="py-24 bg-navy-950 relative grain">
+      <section className="py-24 bg-brand-dark relative grain">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <AnimatedSection>
             <div className="text-center max-w-2xl mx-auto mb-16">
-              <p className="text-safety-yellow font-semibold text-sm uppercase tracking-wider mb-3">
+              <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase mb-3">
                 Come lavoriamo
               </p>
               <h2 className="font-display text-3xl font-bold text-white mb-4">
@@ -203,16 +203,16 @@ export default function Servizi() {
             ].map((item, j) => (
               <AnimatedSection key={item.step} delay={j * 0.1}>
                 <div className="text-center">
-                  <p className="font-display text-5xl font-bold text-navy-800 mb-4">
+                  <p className="font-display text-5xl font-bold text-brand-muted mb-4">
                     {item.step}
                   </p>
-                  <div className="w-12 h-12 bg-safety-yellow/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <item.icon size={22} className="text-safety-yellow" />
+                  <div className="w-12 h-12 bg-brand-accent/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                    <item.icon size={22} className="text-brand-accent" />
                   </div>
                   <h3 className="font-display font-semibold text-white mb-2">
                     {item.title}
                   </h3>
-                  <p className="text-navy-400 text-sm leading-relaxed">
+                  <p className="text-brand-text-muted text-sm leading-relaxed">
                     {item.desc}
                   </p>
                 </div>
@@ -226,16 +226,16 @@ export default function Servizi() {
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <h2 className="font-display text-3xl font-bold text-navy-950 mb-6">
+            <h2 className="font-display text-3xl font-bold text-brand-elevated mb-6">
               Volete saperne di più?
             </h2>
-            <p className="text-navy-600 mb-8 leading-relaxed">
+            <p className="text-gray-600 mb-8 leading-relaxed">
               Contattateci per una consulenza tecnica. Analizziamo le vostre
               esigenze e vi proponiamo la soluzione più adatta.
             </p>
             <Link
               href="/contatti"
-              className="inline-flex items-center gap-2 bg-safety-yellow hover:bg-safety-amber text-navy-950 font-semibold px-8 py-4 rounded-xl transition-all hover:shadow-xl hover:shadow-safety-yellow/20 group"
+              className="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accent-hover text-brand-elevated font-semibold px-8 py-4 rounded-lg transition-all hover:shadow-xl hover:shadow-brand-accent/20 group"
             >
               Richiedi una Consulenza
               <ArrowRight

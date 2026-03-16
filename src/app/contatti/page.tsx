@@ -43,17 +43,17 @@ export default function Contatti() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-navy-950 pt-32 pb-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(245,166,35,0.06),transparent_60%)]" />
+      <section className="bg-brand-dark pt-32 pb-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <AnimatedSection>
-            <p className="text-safety-yellow font-semibold text-sm uppercase tracking-wider mb-4">
+            <p className="text-brand-accent font-mono text-xs tracking-[0.2em] uppercase mb-4">
               Contatti
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
               Come possiamo aiutarvi?
             </h1>
-            <p className="text-navy-300 text-lg max-w-2xl leading-relaxed">
+            <p className="text-brand-text-muted text-lg max-w-2xl leading-relaxed">
               Consulenze tecniche, preventivi, assistenza. Descriveteci la vostra
               situazione e vi ricontattiamo entro 24 ore.
             </p>
@@ -68,10 +68,10 @@ export default function Contatti() {
             {/* FORM */}
             <div className="lg:col-span-3">
               <AnimatedSection>
-                <h2 className="font-display text-2xl font-bold text-navy-950 mb-2">
+                <h2 className="font-display text-2xl font-bold text-brand-elevated mb-2">
                   Invia una richiesta
                 </h2>
-                <p className="text-navy-600 text-sm mb-8">
+                <p className="text-gray-600 text-sm mb-8">
                   Compilate il modulo e vi ricontatteremo entro 24 ore lavorative.
                 </p>
                 <ContactForm />
@@ -81,20 +81,20 @@ export default function Contatti() {
             {/* INFO */}
             <div className="lg:col-span-2">
               <AnimatedSection delay={0.15}>
-                <h2 className="font-display text-2xl font-bold text-navy-950 mb-8">
+                <h2 className="font-display text-2xl font-bold text-brand-elevated mb-8">
                   I nostri recapiti
                 </h2>
                 <div className="space-y-6">
                   {contactInfo.map((info) => (
                     <div
                       key={info.title}
-                      className="flex items-start gap-4 p-4 bg-navy-50/50 rounded-xl border border-navy-100"
+                      className="flex items-start gap-4 p-4 bg-brand-light rounded-lg border border-gray-100"
                     >
-                      <div className="w-10 h-10 bg-navy-950 rounded-lg flex items-center justify-center shrink-0">
-                        <info.icon size={18} className="text-safety-yellow" />
+                      <div className="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center shrink-0">
+                        <info.icon size={18} className="text-brand-accent" />
                       </div>
                       <div>
-                        <p className="font-semibold text-navy-950 text-sm">
+                        <p className="font-semibold text-brand-elevated text-sm">
                           {info.title}
                         </p>
                         {info.href ? (
@@ -102,15 +102,15 @@ export default function Contatti() {
                             href={info.href}
                             target={info.href.startsWith("http") ? "_blank" : undefined}
                             rel={info.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                            className="text-navy-700 text-sm hover:text-safety-amber transition-colors"
+                            className="text-gray-700 text-sm hover:text-brand-accent transition-colors"
                           >
                             {info.value}
                           </a>
                         ) : (
-                          <p className="text-navy-700 text-sm">{info.value}</p>
+                          <p className="text-gray-700 text-sm">{info.value}</p>
                         )}
                         {info.note && (
-                          <p className="text-navy-500 text-xs mt-1">
+                          <p className="text-gray-500 text-xs mt-1">
                             {info.note}
                           </p>
                         )}
@@ -120,17 +120,17 @@ export default function Contatti() {
                 </div>
 
                 {/* MAP PLACEHOLDER */}
-                <div className="mt-8 rounded-xl overflow-hidden border border-navy-100">
-                  <div className="bg-gradient-to-br from-navy-100 to-navy-200 aspect-video flex items-center justify-center">
+                <div className="mt-8 rounded-lg overflow-hidden border border-gray-100">
+                  <div className="bg-gradient-to-br from-gray-100 to-gray-200 aspect-video flex items-center justify-center">
                     <div className="text-center">
                       <MapPin
                         size={32}
-                        className="text-navy-400 mx-auto mb-2"
+                        className="text-brand-text-muted mx-auto mb-2"
                       />
-                      <p className="text-navy-500 text-sm font-medium">
+                      <p className="text-gray-500 text-sm font-medium">
                         Google Maps
                       </p>
-                      <p className="text-navy-400 text-xs">
+                      <p className="text-brand-text-muted text-xs">
                         Piazza Bernina 6, Sassuolo
                       </p>
                     </div>
