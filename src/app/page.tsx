@@ -25,7 +25,7 @@ const painPoints = [
     icon: Clock,
     title: "Tempi di risposta reali",
     description:
-      "Sappiamo cosa significa avere un carrello fermo in produzione. Il nostro tempo medio di intervento e di 24 ore perche operiamo direttamente sul territorio, non da un ufficio a centinaia di chilometri.",
+      "Sappiamo cosa significa avere un carrello fermo in produzione. Il nostro tempo medio di intervento è di 24 ore perché operiamo direttamente sul territorio, non da un ufficio a centinaia di chilometri.",
   },
   {
     icon: Users,
@@ -72,7 +72,7 @@ const services = [
     label: "Energia",
     title: "Batterie Industriali",
     description:
-      "Piombo-acido, litio, qualsiasi tecnologia. Analisi di capacita, rigenerazione, manutenzione e fornitura.",
+      "Piombo-acido, litio, qualsiasi tecnologia. Analisi di capacità, rigenerazione, manutenzione e fornitura.",
     href: "/servizi#batterie",
   },
   {
@@ -80,7 +80,7 @@ const services = [
     label: "Ricambi",
     title: "Fornitura Ricambi",
     description:
-      "Ricambi originali e compatibili multimarca. Disponibilita a magazzino per i componenti piu richiesti.",
+      "Ricambi originali e compatibili multimarca. Disponibilità a magazzino per i componenti più richiesti.",
     href: "/contatti",
   },
 ];
@@ -89,17 +89,17 @@ const differentiators = [
   {
     icon: Clock,
     title: "Sul territorio, non al telefono",
-    text: "La nostra sede e a Sassuolo e operiamo su tutta l'Emilia-Romagna. Chi vi risponde e la stessa persona che gestisce l'intervento. Nessun passaggio intermedio.",
+    text: "La nostra sede è a Sassuolo e operiamo su tutta l'Emilia-Romagna. Chi vi risponde è la stessa persona che gestisce l'intervento. Nessun passaggio intermedio.",
   },
   {
     icon: Shield,
     title: "Dealer ufficiale Cat® Lift Trucks",
-    text: "Tecnici formati direttamente in fabbrica, ricambi originali, documentazione tecnica completa. La garanzia di un marchio globale con la reattivita di una struttura locale.",
+    text: "Tecnici formati direttamente in fabbrica, ricambi originali, documentazione tecnica completa. La garanzia di un marchio globale con la reattività di una struttura locale.",
   },
   {
     icon: MapPin,
     title: "Trent'anni di esperienza industriale",
-    text: "Dal 1994 lavoriamo con le aziende del distretto ceramico e manifatturiero. Conosciamo le esigenze operative perche le viviamo ogni giorno sul campo.",
+    text: "Dal 1994 lavoriamo con le aziende del distretto ceramico e manifatturiero. Conosciamo le esigenze operative perché le viviamo ogni giorno sul campo.",
   },
 ];
 
@@ -279,7 +279,7 @@ export default function Home() {
                     {services[0].description}
                   </p>
                   <span className="inline-flex items-center gap-2 text-brand-accent text-sm font-medium tracking-wide group-hover:gap-3 transition-all">
-                    Scopri di piu
+                    Scopri di più
                     <ArrowRight size={14} />
                   </span>
                 </div>
@@ -387,7 +387,7 @@ export default function Home() {
                 Il nostro approccio
               </p>
               <h2 className="font-display text-3xl font-bold text-brand-elevated mb-10">
-                La competenza di un dealer ufficiale. La reattivita di chi e sul territorio.
+                La competenza di un dealer ufficiale. La reattività di chi è sul territorio.
               </h2>
 
               <div className="space-y-8">
@@ -464,7 +464,7 @@ export default function Home() {
             {[
               { name: "Cat® Lift Trucks", sub: "Dealer Ufficiale" },
               { name: "TCM", sub: "Rivenditore Autorizzato" },
-              { name: "ISO 9001", sub: "Qualita Certificata" },
+              { name: "ISO 9001", sub: "Qualità Certificata" },
             ].map((p) => (
               <div
                 key={p.name}
@@ -492,7 +492,7 @@ export default function Home() {
             </h2>
             <p className="text-gray-500 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
               Contattateci per una consulenza tecnica. Analizziamo la vostra
-              situazione attuale e vi proponiamo le soluzioni piu adatte,
+              situazione attuale e vi proponiamo le soluzioni più adatte,
               senza impegno.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
