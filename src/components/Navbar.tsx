@@ -51,20 +51,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="relative w-10 h-10">
-              <div className="absolute inset-0 bg-brand-elevated rounded-lg" />
-              <div className="absolute inset-[2px] bg-[#ECAA0D] rounded-md flex items-center justify-center">
-                <span className="font-display text-brand-elevated text-[11px] font-extrabold tracking-wider">
-                  TCM
-                </span>
-              </div>
+          <Link href="/" className="flex items-center gap-3.5 group">
+            <div className="w-11 h-11 bg-[#ECAA0D] rounded-lg flex items-center justify-center shadow-sm">
+              <span className="font-display text-white text-sm font-extrabold tracking-wide drop-shadow-sm">
+                TCM
+              </span>
             </div>
-            <div>
-              <p className="font-display text-brand-elevated text-[17px] font-bold leading-none tracking-tight">
-                NUOVA T.C.M.
+            <div className="flex flex-col justify-center">
+              <p className="font-display text-brand-elevated text-[17px] font-bold leading-tight tracking-tight">
+                Nuova T.C.M.
               </p>
-              <p className="text-gray-400 text-[9px] tracking-[0.25em] uppercase mt-0.5">
+              <p className="text-gray-400 text-[9px] tracking-[0.25em] uppercase leading-tight">
                 Service S.r.l.
               </p>
             </div>

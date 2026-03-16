@@ -8,20 +8,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="relative w-10 h-10">
-                <div className="absolute inset-0 bg-white/10 rounded-lg" />
-                <div className="absolute inset-[2px] bg-[#ECAA0D] rounded-md flex items-center justify-center">
-                  <span className="font-display text-brand-dark text-[11px] font-extrabold tracking-wider">
-                    TCM
-                  </span>
-                </div>
+            <div className="flex items-center gap-3.5 mb-6">
+              <div className="w-11 h-11 bg-[#ECAA0D] rounded-lg flex items-center justify-center">
+                <span className="font-display text-white text-sm font-extrabold tracking-wide drop-shadow-sm">
+                  TCM
+                </span>
               </div>
-              <div>
-                <p className="font-display text-white text-[17px] font-bold leading-none tracking-tight">
-                  NUOVA T.C.M.
+              <div className="flex flex-col justify-center">
+                <p className="font-display text-white text-[17px] font-bold leading-tight tracking-tight">
+                  Nuova T.C.M.
                 </p>
-                <p className="text-brand-text-muted text-[9px] tracking-[0.25em] uppercase mt-0.5">
+                <p className="text-brand-text-muted text-[9px] tracking-[0.25em] uppercase leading-tight">
                   Service S.r.l.
                 </p>
               </div>
