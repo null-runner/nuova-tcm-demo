@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
   title: "Catalogo Carrelli Elevatori",
@@ -15,49 +15,57 @@ const categories = [
     title: "Transpallet Manuali",
     description: "Per la movimentazione quotidiana senza complicazioni. Robusti, semplici, praticamente indistruttibili.",
     portata: "Fino a 2.500 kg",
-    image: "Transpallet manuale CAT®",
+    image: "/images/catalog/transpallet-manuali.png",
+    alt: "Transpallet manuale CAT®",
   },
   {
     title: "Transpallet Elettrici",
     description: "Quando i volumi aumentano e la movimentazione manuale non basta più. Autonomia estesa, manutenzione ridotta.",
     portata: "Fino a 2.500 kg",
-    image: "Transpallet elettrico con operatore",
+    image: "/images/catalog/transpallet-elettrici.png",
+    alt: "Transpallet elettrico CAT®",
   },
   {
     title: "Carrelli Stoccatori",
     description: "Stoccaggio in altezza con precisione millimetrica. Progettati per corsie strette e scaffalature intensive.",
     portata: "Fino a 2.000 kg",
-    image: "Stoccatore elettrico in magazzino",
+    image: "/images/catalog/stoccatori.png",
+    alt: "Stoccatore elettrico CAT® con montante",
   },
   {
     title: "Carrelli Retrattili",
     description: "Per chi lavora in spazi ridotti con carichi importanti. Sollevamento fino a 13 metri in corsie da 2,5 m.",
     portata: "Fino a 2.500 kg",
-    image: "Carrello retrattile in corsia",
+    image: "/images/catalog/retrattili.png",
+    alt: "Carrello retrattile CAT® vista laterale",
   },
   {
     title: "Controbilanciati Elettrici",
     description: "Potenza senza emissioni. La scelta per chi opera in ambienti chiusi o ha obiettivi di sostenibilità.",
     portata: "Da 1,4 a 5,5 ton",
-    image: "Controbilanciato elettrico CAT®",
+    image: "/images/catalog/controbilanciati-elettrici.png",
+    alt: "Carrello controbilanciato elettrico CAT® a 4 ruote",
   },
   {
     title: "Controbilanciati Diesel",
     description: "Per carichi pesanti e uso intensivo all'aperto. Affidabilità in qualsiasi condizione operativa.",
     portata: "Da 2,0 a 10 ton",
-    image: "Controbilanciato diesel al lavoro",
+    image: "/images/catalog/controbilanciati-diesel.png",
+    alt: "Carrello controbilanciato diesel CAT® heavy-duty",
   },
   {
     title: "Commissionatori",
     description: "Picking rapido e preciso. Configurazioni orizzontali e verticali per ogni layout di magazzino.",
     portata: "Fino a 1.500 kg",
-    image: "Commissionatore in magazzino",
+    image: "/images/catalog/commissionatori.png",
+    alt: "Commissionatore CAT® per picking in magazzino",
   },
   {
     title: "Carrelli Usati Garantiti",
     description: "Revisionati dai nostri tecnici, consegnati con garanzia. Il modo più conveniente per ampliare la flotta.",
     portata: "Varie portate",
-    image: "Selezione carrelli usati revisionati",
+    image: "/images/catalog/carrelli-usati.png",
+    alt: "Selezione carrelli elevatori usati revisionati",
   },
 ];
 
@@ -90,11 +98,15 @@ export default function Catalogo() {
             {categories.map((cat, i) => (
               <AnimatedSection key={cat.title} delay={i * 0.05}>
                 <div className="group bg-white border border-gray-100 hover:border-brand-accent/30 rounded-xl overflow-hidden transition-all hover:shadow-lg hover:shadow-gray-100/50 h-full flex flex-col">
-                  <ImagePlaceholder
-                    label={cat.image}
-                    aspect="square"
-                    className="rounded-none"
-                  />
+                  <div className="aspect-square bg-brand-light flex items-center justify-center p-6 overflow-hidden">
+                    <Image
+                      src={cat.image}
+                      alt={cat.alt}
+                      width={400}
+                      height={400}
+                      className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <div className="p-6 flex flex-col flex-1">
                     <h2 className="font-display font-semibold text-brand-elevated text-lg mb-2">
                       {cat.title}
