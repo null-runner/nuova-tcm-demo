@@ -64,7 +64,7 @@ const services = [
     label: "Fornitura",
     title: "Acquisto e Noleggio",
     description:
-      "Carrelli Cat® Lift Trucks nuovi e usati. Noleggio a breve e lungo termine con manutenzione inclusa.",
+      "Carrelli CAT® Lift Trucks nuovi e usati. Noleggio a breve e lungo termine con manutenzione inclusa.",
     href: "/servizi#vendita",
   },
   {
@@ -93,7 +93,7 @@ const differentiators = [
   },
   {
     icon: Shield,
-    title: "Dealer ufficiale Cat® Lift Trucks",
+    title: "Dealer ufficiale CAT® Lift Trucks",
     text: "Tecnici formati direttamente in fabbrica, ricambi originali, documentazione tecnica completa. La garanzia di un marchio globale con la reattività di una struttura locale.",
   },
   {
@@ -144,16 +144,18 @@ export default function Home() {
 
             <div className="lg:order-1">
               <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-5">
-                Dealer ufficiale Cat® Lift Trucks · Dal 1994
+                Dealer ufficiale CAT® Lift Trucks · Dal 1994
               </p>
 
               <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-brand-elevated leading-[1.12] mb-6">
-                Assistenza carrelli elevatori in Emilia-Romagna
+                Il vostro carrello è fermo.
+                <br />
+                <span className="text-brand-accent">Noi siamo già in strada.</span>
               </h1>
 
               <p className="text-gray-500 text-lg max-w-xl mb-10 leading-relaxed">
-                Riparazioni, gestione flotta e batterie industriali.
-                Da Sassuolo operiamo su tutta l&apos;Emilia-Romagna.
+                Dealer ufficiale CAT® Lift Trucks dal 1994. Assistenza, gestione flotta
+                e batterie industriali per l&apos;industria manifatturiera emiliana.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -176,11 +178,9 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-gray-400">
-                <span>✓ Intervento medio 24h</span>
-                <span>✓ Multimarca</span>
-                <span>✓ Un solo referente</span>
-              </div>
+              <p className="text-gray-400 text-sm">
+                Oltre 500 aziende nel distretto ceramico e manifatturiero ci hanno già scelto.
+              </p>
             </div>
           </div>
         </div>
@@ -194,7 +194,7 @@ export default function Home() {
               { value: "30+", label: "anni nel settore" },
               { value: "500+", label: "clienti attivi" },
               { value: "24h", label: "tempo medio intervento" },
-              { value: "Cat®", label: "dealer ufficiale" },
+              { value: "CAT®", label: "dealer ufficiale" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p className="font-display text-2xl sm:text-3xl text-white font-bold">
@@ -253,7 +253,7 @@ export default function Home() {
                 I nostri servizi
               </p>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
-                Assistenza completa per la movimentazione industriale
+                Un unico partner per carrelli, batterie e ricambi
               </h2>
             </div>
           </AnimatedSection>
@@ -434,7 +434,7 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 gap-px">
                 {[
-                  { label: "Partner ufficiale", value: "Cat® Lift Trucks" },
+                  { label: "Partner ufficiale", value: "CAT® Lift Trucks" },
                   { label: "Certificazione", value: "ISO 9001" },
                   { label: "Copertura", value: "Emilia-Romagna" },
                   { label: "Intervento", value: "Entro 24 ore" },
@@ -462,7 +462,7 @@ export default function Home() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-10">
             {[
-              { name: "Cat® Lift Trucks", sub: "Dealer Ufficiale" },
+              { name: "CAT® Lift Trucks", sub: "Dealer Ufficiale" },
               { name: "TCM", sub: "Rivenditore Autorizzato" },
               { name: "ISO 9001", sub: "Qualità Certificata" },
             ].map((p) => (

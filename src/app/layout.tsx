@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | Nuova T.C.M. Service",
   },
   description:
-    "Riparazioni entro 24h, gestione flotta, batterie industriali. Dealer Cat® Lift Trucks. Sede a Sassuolo, operiamo su tutta l'Emilia-Romagna.",
+    "Riparazioni entro 24h, gestione flotta, batterie industriali. Dealer CAT® Lift Trucks. Sede a Sassuolo, operiamo su tutta l'Emilia-Romagna.",
   keywords: [
     "carrelli elevatori Sassuolo",
     "assistenza carrelli elevatori Modena",
@@ -55,7 +55,7 @@ const localBusinessSchema = {
   "@type": "LocalBusiness",
   name: "Nuova T.C.M. Service S.r.l.",
   description:
-    "Assistenza, vendita e noleggio carrelli elevatori. Dealer ufficiale Cat® Lift Trucks a Sassuolo dal 1994.",
+    "Assistenza, vendita e noleggio carrelli elevatori. Dealer ufficiale CAT® Lift Trucks a Sassuolo dal 1994.",
   url: "https://www.nuovatcmservice.com",
   telephone: "+390536800034",
   email: "info@nuovatcmservice.com",

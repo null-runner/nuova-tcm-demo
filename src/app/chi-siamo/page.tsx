@@ -26,9 +26,9 @@ const timeline = [
   },
   {
     year: "2000",
-    title: "Dealer Cat®",
+    title: "Dealer CAT®",
     description:
-      "Diventiamo dealer ufficiale Cat® Lift Trucks, consolidando la partnership con uno dei leader mondiali nella movimentazione.",
+      "Diventiamo dealer ufficiale CAT® Lift Trucks, consolidando la partnership con uno dei leader mondiali nella movimentazione.",
   },
   {
     year: "2010",

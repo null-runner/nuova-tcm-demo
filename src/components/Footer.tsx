@@ -24,7 +24,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-sm leading-relaxed">
-              Dealer ufficiale Cat® Lift Trucks. Assistenza, noleggio e vendita
+              Dealer ufficiale CAT® Lift Trucks. Assistenza, noleggio e vendita
               carrelli elevatori dal 1994.
             </p>
           </div>

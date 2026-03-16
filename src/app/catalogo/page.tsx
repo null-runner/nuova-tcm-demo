@@ -7,7 +7,7 @@ import ImagePlaceholder from "@/components/ImagePlaceholder";
 export const metadata: Metadata = {
   title: "Catalogo Carrelli Elevatori",
   description:
-    "Scopri la gamma completa di carrelli elevatori Cat® Lift Trucks: transpallet, stoccatori, retrattili, controbilanciati. Nuovi e usati, disponibili a Sassuolo.",
+    "Scopri la gamma completa di carrelli elevatori CAT® Lift Trucks: transpallet, stoccatori, retrattili, controbilanciati. Nuovi e usati, disponibili a Sassuolo.",
 };
 
 const categories = [
@@ -15,7 +15,7 @@ const categories = [
     title: "Transpallet Manuali",
     description: "Soluzioni essenziali per la movimentazione leggera. Robusti, affidabili, zero manutenzione.",
     portata: "Fino a 2.500 kg",
-    image: "Transpallet manuale Cat®",
+    image: "Transpallet manuale CAT®",
   },
   {
     title: "Transpallet Elettrici",
@@ -39,7 +39,7 @@ const categories = [
     title: "Controbilanciati Elettrici",
     description: "Zero emissioni, massima potenza. La scelta green per l'industria moderna.",
     portata: "Da 1,4 a 5,5 ton",
-    image: "Controbilanciato elettrico Cat®",
+    image: "Controbilanciato elettrico CAT®",
   },
   {
     title: "Controbilanciati Diesel",
@@ -74,7 +74,7 @@ export default function Catalogo() {
             </p>
             <h1 className="font-display text-4xl sm:text-5xl font-bold text-white mb-6 max-w-3xl">
               Carrelli elevatori{" "}
-              <span className="text-safety-yellow">Cat® Lift Trucks</span>
+              <span className="text-safety-yellow">CAT® Lift Trucks</span>
             </h1>
             <p className="text-navy-300 text-lg max-w-2xl leading-relaxed">
               Una soluzione per ogni esigenza di movimentazione. Nuovi, usati e a

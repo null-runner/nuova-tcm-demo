@@ -23,9 +23,9 @@ const serviceBlocks = [
     id: "vendita",
     icon: Truck,
     title: "Vendita e Noleggio",
-    subtitle: "Carrelli nuovi e usati Cat® Lift Trucks",
+    subtitle: "Carrelli nuovi e usati CAT® Lift Trucks",
     description:
-      "Offriamo una gamma completa di carrelli elevatori Cat® Lift Trucks — dai transpallet ai controbilanciati termici. Ogni carrello viene consegnato revisionato e con garanzia.",
+      "Offriamo una gamma completa di carrelli elevatori CAT® Lift Trucks — dai transpallet ai controbilanciati termici. Ogni carrello viene consegnato revisionato e con garanzia.",
     features: [
       "Transpallet manuali ed elettrici",
       "Carrelli stoccatori e commissionatori",
@@ -34,7 +34,7 @@ const serviceBlocks = [
       "Noleggio a breve termine (da 1 giorno)",
       "Noleggio a lungo termine con manutenzione inclusa",
     ],
-    image: "Carrelli Cat® in esposizione",
+    image: "Carrelli CAT® in esposizione",
   },
   {
     id: "riparazione",
