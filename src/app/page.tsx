@@ -88,8 +88,8 @@ const services = [
 const differentiators = [
   {
     icon: Clock,
-    title: "Sul territorio, non al telefono",
-    text: "La nostra sede è a Sassuolo e operiamo su tutta l'Emilia-Romagna. Chi vi risponde è la stessa persona che gestisce l'intervento. Nessun passaggio intermedio.",
+    title: "Presenti dove lavorate voi",
+    text: "Con sede a Sassuolo, copriamo tutta l'Emilia-Romagna. Non gestiamo le emergenze da remoto: il tecnico che vi risponde al telefono è lo stesso che si presenta in stabilimento.",
   },
   {
     icon: Shield,
