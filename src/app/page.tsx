@@ -428,7 +428,7 @@ export default function Home() {
                   Trent&apos;anni nel cuore del distretto ceramico
                 </h2>
                 <p className="text-brand-text-muted leading-relaxed max-w-lg">
-                  Quando un carrello si ferma alle 7 di mattina e la linea di
+                  Quando un carrello si ferma alle 8 di mattina e la linea di
                   produzione si blocca, non serve un call center. Serve qualcuno
                   che conosce i vostri impianti e sia in grado di intervenire
                   in tempi reali. Noi facciamo questo da trent&apos;anni.
