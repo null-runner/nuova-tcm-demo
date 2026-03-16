@@ -23,21 +23,21 @@ import HeroVideo from "@/components/HeroVideo";
 const painPoints = [
   {
     icon: Clock,
-    title: "Il tuo fornitore risponde dopo 48 ore",
+    title: "Tempi di intervento che fanno la differenza",
     description:
-      "Ogni carrello fermo blocca una linea. Ogni linea ferma costa. Noi interveniamo entro 24 ore, perche siamo sul territorio, non a 200 km.",
+      "Un carrello fermo e una linea di produzione ferma. Il nostro tempo medio di intervento e di 24 ore, perche operiamo direttamente sul territorio emiliano.",
   },
   {
     icon: Users,
-    title: "Per ogni cosa chiami qualcuno diverso",
+    title: "Un unico interlocutore per tutta la flotta",
     description:
-      "Tre fornitori, tre contratti, tre tempi di risposta. Noi gestiamo carrelli, batterie e ricambi con un unico referente. Una chiamata, un responsabile che conosce la tua flotta.",
+      "Carrelli, batterie, ricambi, manutenzione. Un solo contratto, un solo referente che conosce i tuoi impianti e le tue esigenze operative.",
   },
   {
     icon: BarChart3,
-    title: "Nessuno analizza la tua flotta",
+    title: "Decisioni basate su dati tecnici",
     description:
-      "Quanti cicli ha quella batteria? Quel carrello conviene ripararlo o sostituirlo? Noi facciamo l'audit tecnico della flotta. Poi decidi tu.",
+      "Analisi dello stato della flotta, cicli batteria, costi di manutenzione. Forniamo le informazioni per pianificare interventi e sostituzioni in modo consapevole.",
   },
 ];
 
@@ -47,7 +47,7 @@ const services = [
     label: "Assistenza",
     title: "Riparazioni e Manutenzione",
     description:
-      "Intervento entro 24 ore, in sede o fuori sede. Manutenzione ordinaria e straordinaria, multimarca. Contratti personalizzati per flotte di qualsiasi dimensione.",
+      "Manutenzione ordinaria e straordinaria, in sede o fuori sede. Assistenza multimarca con ricambi originali. Contratti personalizzati per flotte di qualsiasi dimensione.",
     href: "/servizi#riparazione",
     featured: true,
   },
@@ -88,18 +88,18 @@ const services = [
 const differentiators = [
   {
     icon: Clock,
-    title: "Intervento in 24 ore",
-    text: "Sede a Sassuolo, interventi su tutta l'Emilia-Romagna. Quando chiami, chi risponde e la stessa persona che viene a risolvere il problema.",
+    title: "Presenza territoriale",
+    text: "Sede a Sassuolo, operativi su tutta l'Emilia-Romagna. Chi risponde al telefono e la stessa persona che gestisce l'intervento.",
   },
   {
     icon: Shield,
-    title: "Tecnici certificati Cat®",
-    text: "Dealer ufficiale con formazione diretta in fabbrica e accesso a ricambi originali. Non siamo un'officina generica.",
+    title: "Competenza certificata",
+    text: "Dealer ufficiale Cat® Lift Trucks. Tecnici con formazione diretta in fabbrica e accesso a ricambi originali e documentazione tecnica.",
   },
   {
     icon: MapPin,
-    title: "Un referente, un contratto",
-    text: "Carrelli, batterie, ricambi. Un unico interlocutore che conosce la tua flotta e i tuoi impianti.",
+    title: "Approccio integrato",
+    text: "Carrelli, batterie, ricambi, gestione flotta. Un unico interlocutore con una visione completa delle vostre esigenze operative.",
   },
 ];
 
@@ -108,7 +108,7 @@ const steps = [
     step: "01",
     icon: Phone,
     title: "Chiamata",
-    desc: "Ci contatti, rispondiamo noi. Non un centralino.",
+    desc: "Ci contatti. Rispondiamo direttamente noi.",
   },
   {
     step: "02",
@@ -126,7 +126,7 @@ const steps = [
     step: "04",
     icon: RotateCw,
     title: "Presidio",
-    desc: "Manutenzione continua. Preveniamo il prossimo fermo.",
+    desc: "Manutenzione programmata per prevenire i fermi.",
   },
 ];
 
@@ -215,10 +215,10 @@ export default function Home() {
           <AnimatedSection>
             <div className="max-w-2xl mb-14">
               <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
-                Problemi che conosci bene
+                Il valore aggiunto
               </p>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated">
-                Se gestisci una flotta, li vivi ogni giorno
+                Tre motivi per cui le aziende ci scelgono
               </h2>
             </div>
           </AnimatedSection>
@@ -227,8 +227,8 @@ export default function Home() {
             {painPoints.map((pain, i) => (
               <AnimatedSection key={pain.title} delay={i * 0.1}>
                 <div className="bg-brand-light rounded-2xl p-8 h-full border border-gray-100">
-                  <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5">
-                    <pain.icon size={22} className="text-red-500" strokeWidth={1.5} />
+                  <div className="w-12 h-12 bg-brand-accent/10 rounded-xl flex items-center justify-center mb-5">
+                    <pain.icon size={22} className="text-brand-accent" strokeWidth={1.5} />
                   </div>
                   <h3 className="font-display text-lg font-semibold text-brand-elevated mb-3">
                     {pain.title}
@@ -250,10 +250,10 @@ export default function Home() {
           <AnimatedSection>
             <div className="max-w-2xl mb-14">
               <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
-                Cosa facciamo, in concreto
+                I nostri servizi
               </p>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
-                Un unico partner per tutta la flotta
+                Assistenza completa per la movimentazione industriale
               </h2>
             </div>
           </AnimatedSection>
@@ -384,10 +384,10 @@ export default function Home() {
 
             <AnimatedSection delay={0.1}>
               <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
-                Perche le industrie del distretto lavorano con noi
+                Perche scegliere Nuova T.C.M.
               </p>
               <h2 className="font-display text-3xl font-bold text-brand-elevated mb-10">
-                Non siamo solo fornitori. Siamo quelli che rispondono al primo squillo.
+                L&apos;affidabilita di una struttura locale con la competenza di un dealer ufficiale.
               </h2>
 
               <div className="space-y-8">
@@ -488,19 +488,19 @@ export default function Home() {
               Contatti
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated mb-6">
-              Parlaci della tua flotta
+              Parliamo delle vostre esigenze
             </h2>
             <p className="text-gray-500 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
-              Raccontaci quanti carrelli hai, che problemi stai affrontando.
-              Ti facciamo un&apos;analisi gratuita e ti diciamo cosa possiamo fare.
-              Senza impegno, senza giri di parole.
+              Contattateci per una consulenza tecnica sulla vostra flotta.
+              Analizziamo la situazione attuale e proponiamo le soluzioni
+              piu adatte alle vostre esigenze operative.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contatti"
                 className="inline-flex items-center justify-center gap-3 bg-brand-elevated hover:bg-brand-dark text-white font-semibold px-8 py-4 rounded-lg text-sm tracking-wide transition-colors group"
               >
-                Richiedi un&apos;analisi gratuita
+                Richiedi una consulenza
                 <ArrowRight
                   size={16}
                   className="group-hover:translate-x-1 transition-transform"
