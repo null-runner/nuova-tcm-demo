@@ -1,20 +1,19 @@
 import type { Metadata } from "next";
-import { Inter, DM_Serif_Display, JetBrains_Mono } from "next/font/google";
+import { DM_Sans, Outfit, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const display = DM_Serif_Display({
+const display = Outfit({
   subsets: ["latin"],
   variable: "--font-display",
-  weight: ["400"],
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const body = Inter({
+const body = DM_Sans({
   subsets: ["latin"],
   variable: "--font-body",
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700"],
 });
 
 const mono = JetBrains_Mono({
@@ -25,7 +24,8 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Assistenza Carrelli Elevatori Emilia-Romagna | Nuova T.C.M. Service",
+    default:
+      "Assistenza Carrelli Elevatori Emilia-Romagna | Nuova T.C.M. Service",
     template: "%s | Nuova T.C.M. Service",
   },
   description:

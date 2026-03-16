@@ -11,8 +11,35 @@ import {
   Clock,
   MapPin,
   Shield,
+  Users,
+  BarChart3,
+  ChevronRight,
+  ClipboardCheck,
+  RotateCw,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
+import HeroVideo from "@/components/HeroVideo";
+
+const painPoints = [
+  {
+    icon: Clock,
+    title: "Il tuo fornitore risponde dopo 48 ore",
+    description:
+      "Ogni carrello fermo blocca una linea. Ogni linea ferma costa. Noi interveniamo entro 24 ore, perche siamo sul territorio, non a 200 km.",
+  },
+  {
+    icon: Users,
+    title: "Per ogni cosa chiami qualcuno diverso",
+    description:
+      "Tre fornitori, tre contratti, tre tempi di risposta. Noi gestiamo carrelli, batterie e ricambi con un unico referente. Una chiamata, un responsabile che conosce la tua flotta.",
+  },
+  {
+    icon: BarChart3,
+    title: "Nessuno analizza la tua flotta",
+    description:
+      "Quanti cicli ha quella batteria? Quel carrello conviene ripararlo o sostituirlo? Noi facciamo l'audit tecnico della flotta. Poi decidi tu.",
+  },
+];
 
 const services = [
   {
@@ -76,32 +103,58 @@ const differentiators = [
   },
 ];
 
+const steps = [
+  {
+    step: "01",
+    icon: Phone,
+    title: "Chiamata",
+    desc: "Ci contatti, rispondiamo noi. Non un centralino.",
+  },
+  {
+    step: "02",
+    icon: ClipboardCheck,
+    title: "Analisi",
+    desc: "Valutiamo il problema e proponiamo la soluzione.",
+  },
+  {
+    step: "03",
+    icon: Wrench,
+    title: "Intervento",
+    desc: "Siamo da te con ricambi e attrezzatura.",
+  },
+  {
+    step: "04",
+    icon: RotateCw,
+    title: "Presidio",
+    desc: "Manutenzione continua. Preveniamo il prossimo fermo.",
+  },
+];
+
 export default function Home() {
   return (
     <>
       {/* ══════ HERO ══════ */}
-      <section className="relative min-h-[92vh] flex items-center bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-40 w-full">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-            {/* Left: Text */}
+      <section className="relative flex items-center bg-white overflow-hidden pt-28 pb-16 lg:pt-32 lg:pb-20">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-8 items-center">
             <div>
-              <p className="font-mono text-brand-accent text-xs tracking-[0.25em] uppercase mb-6">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-5">
                 Dealer ufficiale Cat® Lift Trucks · Dal 1994
               </p>
 
-              <h1 className="font-display text-[2.75rem] sm:text-[3.5rem] lg:text-[4rem] text-brand-elevated leading-[1.08] mb-8">
+              <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-brand-elevated leading-[1.12] mb-6">
                 Assistenza carrelli elevatori in Emilia-Romagna
               </h1>
 
-              <p className="text-gray-500 text-lg max-w-xl mb-12 leading-relaxed">
+              <p className="text-gray-500 text-lg max-w-xl mb-10 leading-relaxed">
                 Riparazioni, gestione flotta e batterie industriali.
                 Da Sassuolo operiamo su tutta l&apos;Emilia-Romagna.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link
                   href="/contatti"
-                  className="inline-flex items-center justify-center gap-3 bg-brand-elevated hover:bg-brand-dark text-white font-medium px-8 py-4 text-sm tracking-wide transition-colors group"
+                  className="inline-flex items-center justify-center gap-3 bg-brand-elevated hover:bg-brand-dark text-white font-semibold px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors group"
                 >
                   Parla con un Esperto
                   <ArrowRight
@@ -111,35 +164,29 @@ export default function Home() {
                 </Link>
                 <a
                   href="tel:+390536800034"
-                  className="inline-flex items-center justify-center gap-3 border border-gray-200 hover:border-gray-400 text-brand-elevated px-8 py-4 text-sm tracking-wide transition-colors"
+                  className="inline-flex items-center justify-center gap-3 border border-gray-200 hover:border-gray-400 text-brand-elevated px-7 py-3.5 rounded-lg text-sm tracking-wide transition-colors"
                 >
                   <Phone size={15} className="text-brand-accent" />
                   0536 800034
                 </a>
               </div>
+
+              <div className="flex flex-wrap gap-x-6 gap-y-1 text-sm text-gray-400">
+                <span>✓ Intervento medio 24h</span>
+                <span>✓ Multimarca</span>
+                <span>✓ Un solo referente</span>
+              </div>
             </div>
 
-            {/* Right: Video */}
             <div className="flex items-center justify-center">
-              <video
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="w-full max-w-lg mix-blend-multiply"
-              >
-                <source src="/images/hero-forklift.mp4" type="video/mp4" />
-              </video>
+              <HeroVideo />
             </div>
           </div>
         </div>
-
-        {/* Bottom accent */}
-        <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-brand-accent/40 via-brand-accent/20 to-transparent" />
       </section>
 
       {/* ══════ TRUST BAR ══════ */}
-      <section className="bg-brand-surface border-b border-white/5">
+      <section className="bg-brand-surface border-y border-white/5">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {[
@@ -149,7 +196,7 @@ export default function Home() {
               { value: "Cat®", label: "dealer ufficiale" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="font-mono text-2xl sm:text-3xl text-white font-medium">
+                <p className="font-display text-2xl sm:text-3xl text-white font-bold">
                   {stat.value}
                 </p>
                 <p className="text-brand-text-muted text-xs tracking-wider uppercase mt-1">
@@ -161,16 +208,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════ SERVIZI ══════ */}
-      <section className="py-24 lg:py-32 bg-white">
+      {/* ══════ PAIN POINTS ══════ */}
+      <section className="py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <AnimatedSection>
-            <div className="max-w-xl mb-16">
-              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
-                Servizi
+            <div className="max-w-2xl mb-14">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
+                Problemi che conosci bene
               </p>
-              <h2 className="font-display text-3xl sm:text-4xl text-brand-elevated leading-tight">
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated">
+                Se gestisci una flotta, li vivi ogni giorno
+              </h2>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {painPoints.map((pain, i) => (
+              <AnimatedSection key={pain.title} delay={i * 0.1}>
+                <div className="bg-brand-light rounded-2xl p-8 h-full border border-gray-100">
+                  <div className="w-12 h-12 bg-red-50 rounded-xl flex items-center justify-center mb-5">
+                    <pain.icon size={22} className="text-red-500" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="font-display text-lg font-semibold text-brand-elevated mb-3">
+                    {pain.title}
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {pain.description}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════ SERVIZI ══════ */}
+      <section className="py-20 lg:py-24 bg-brand-dark relative grain overflow-hidden">
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-accent/[0.03] rounded-full blur-3xl" />
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
+          <AnimatedSection>
+            <div className="max-w-2xl mb-14">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
                 Cosa facciamo, in concreto
+              </p>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
+                Un unico partner per tutta la flotta
               </h2>
             </div>
           </AnimatedSection>
@@ -179,23 +261,17 @@ export default function Home() {
           <AnimatedSection>
             <Link
               href={services[0].href}
-              className="group block bg-brand-dark relative overflow-hidden mb-8"
+              className="group block bg-brand-surface rounded-2xl relative overflow-hidden mb-6 border border-white/5 hover:border-brand-accent/30 transition-colors"
             >
-              <div className="absolute inset-0">
-                <Image
-                  src="/images/repair-service.jpg"
-                  alt="Tecnico al lavoro su un carrello elevatore"
-                  fill
-                  className="object-cover opacity-20 group-hover:opacity-25 transition-opacity duration-500"
-                  sizes="100vw"
-                />
-              </div>
-              <div className="relative grid lg:grid-cols-2 gap-8 p-10 lg:p-16">
+              <div className="grid lg:grid-cols-2 gap-8 p-8 lg:p-12">
                 <div>
-                  <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
+                  <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
                     {services[0].label}
+                    <span className="ml-3 bg-brand-accent/15 text-brand-accent px-2 py-0.5 rounded text-[10px] tracking-normal">
+                      Core
+                    </span>
                   </p>
-                  <h3 className="font-display text-2xl sm:text-3xl text-white mb-4">
+                  <h3 className="font-display text-2xl font-bold text-white mb-4">
                     {services[0].title}
                   </h3>
                   <p className="text-brand-text-muted leading-relaxed mb-6 max-w-md">
@@ -206,32 +282,45 @@ export default function Home() {
                     <ArrowRight size={14} />
                   </span>
                 </div>
+                <div className="hidden lg:flex items-center justify-center">
+                  <Image
+                    src="/images/repair-service.jpg"
+                    alt="Tecnico al lavoro su un carrello elevatore"
+                    width={500}
+                    height={300}
+                    className="rounded-xl object-cover opacity-60"
+                  />
+                </div>
               </div>
             </Link>
           </AnimatedSection>
 
-          {/* Other services grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-gray-100">
+          {/* Other services */}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {services.slice(1).map((service, i) => (
               <AnimatedSection key={service.title} delay={i * 0.08}>
                 <Link
                   href={service.href}
-                  className="group block bg-white p-8 lg:p-10 h-full hover:bg-brand-light transition-colors"
+                  className="group block bg-brand-surface rounded-xl p-6 h-full border border-white/5 hover:border-brand-accent/20 transition-colors"
                 >
                   <service.icon
                     size={20}
-                    className="text-brand-accent mb-6"
+                    className="text-brand-accent mb-4"
                     strokeWidth={1.5}
                   />
                   <p className="font-mono text-brand-text-muted text-[10px] tracking-[0.2em] uppercase mb-2">
                     {service.label}
                   </p>
-                  <h3 className="font-display text-xl text-brand-elevated mb-3">
+                  <h3 className="font-display text-base font-semibold text-white mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">
+                  <p className="text-brand-text-muted text-sm leading-relaxed mb-4">
                     {service.description}
                   </p>
+                  <span className="inline-flex items-center gap-1 text-sm text-brand-text-muted group-hover:text-brand-accent transition-colors">
+                    Dettagli
+                    <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                  </span>
                 </Link>
               </AnimatedSection>
             ))}
@@ -239,12 +328,49 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════ PERCHE NOI ══════ */}
-      <section className="py-24 lg:py-32 bg-brand-light">
+      {/* ══════ COME LAVORIAMO ══════ */}
+      <section className="py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <AnimatedSection>
+            <div className="text-center max-w-2xl mx-auto mb-16">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
+                Come lavoriamo
+              </p>
+              <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated">
+                Dal primo contatto alla soluzione
+              </h2>
+            </div>
+          </AnimatedSection>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {steps.map((item, j) => (
+              <AnimatedSection key={item.step} delay={j * 0.1}>
+                <div className="text-center">
+                  <p className="font-display text-5xl font-bold text-gray-100 mb-4">
+                    {item.step}
+                  </p>
+                  <div className="w-14 h-14 bg-brand-dark rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <item.icon size={24} className="text-brand-accent" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="font-display font-semibold text-brand-elevated text-lg mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+              </AnimatedSection>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════ PERCHE NOI ══════ */}
+      <section className="py-20 lg:py-24 bg-brand-light">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
-              <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden">
                 <Image
                   src="/images/warehouse-fleet.jpg"
                   alt="Flotta di carrelli elevatori in magazzino industriale"
@@ -252,36 +378,25 @@ export default function Home() {
                   height={448}
                   className="w-full h-auto object-cover"
                 />
-                <div className="absolute bottom-0 left-0 bg-brand-dark px-6 py-4">
-                  <p className="font-mono text-brand-accent text-xs tracking-wider">
-                    Piazza Bernina 6, Sassuolo (MO)
-                  </p>
-                </div>
               </div>
             </AnimatedSection>
 
             <AnimatedSection delay={0.1}>
-              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
                 Perche le industrie del distretto lavorano con noi
               </p>
-              <h2 className="font-display text-3xl sm:text-4xl text-brand-elevated leading-tight mb-12">
-                Non siamo solo fornitori.
-                <br />
-                Siamo quelli che rispondono al primo squillo.
+              <h2 className="font-display text-3xl font-bold text-brand-elevated mb-10">
+                Non siamo solo fornitori. Siamo quelli che rispondono al primo squillo.
               </h2>
 
-              <div className="space-y-10">
+              <div className="space-y-8">
                 {differentiators.map((item) => (
                   <div key={item.title} className="flex gap-5">
-                    <div className="w-10 h-10 bg-brand-dark flex items-center justify-center shrink-0">
-                      <item.icon
-                        size={18}
-                        className="text-brand-accent"
-                        strokeWidth={1.5}
-                      />
+                    <div className="w-10 h-10 bg-brand-dark rounded-lg flex items-center justify-center shrink-0">
+                      <item.icon size={18} className="text-brand-accent" strokeWidth={1.5} />
                     </div>
                     <div>
-                      <h3 className="text-brand-elevated font-medium mb-1.5">
+                      <h3 className="text-brand-elevated font-semibold mb-1">
                         {item.title}
                       </h3>
                       <p className="text-gray-500 text-sm leading-relaxed">
@@ -296,16 +411,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ══════ HERITAGE STRIP ══════ */}
+      {/* ══════ HERITAGE ══════ */}
       <section className="bg-brand-dark relative grain">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-28">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-24">
           <AnimatedSection>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
+                <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
                   Dal 1994
                 </p>
-                <h2 className="font-display text-3xl sm:text-4xl text-white leading-tight mb-6">
+                <h2 className="font-display text-3xl sm:text-4xl font-bold text-white leading-tight mb-6">
                   Trent&apos;anni nel cuore del distretto ceramico
                 </h2>
                 <p className="text-brand-text-muted leading-relaxed max-w-lg">
@@ -323,14 +438,11 @@ export default function Home() {
                   { label: "Copertura", value: "Emilia-Romagna" },
                   { label: "Intervento", value: "Entro 24 ore" },
                 ].map((item) => (
-                  <div
-                    key={item.label}
-                    className="bg-brand-surface p-6 lg:p-8"
-                  >
-                    <p className="font-mono text-brand-text-muted text-[10px] tracking-[0.2em] uppercase mb-2">
+                  <div key={item.label} className="bg-brand-surface rounded-lg p-6">
+                    <p className="text-brand-text-muted text-xs tracking-wider uppercase mb-2">
                       {item.label}
                     </p>
-                    <p className="text-white font-medium text-sm">
+                    <p className="text-white font-semibold text-sm">
                       {item.value}
                     </p>
                   </div>
@@ -341,17 +453,43 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ══════ PARTNER ══════ */}
+      <section className="py-12 bg-white border-b border-gray-100">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <p className="text-center text-gray-400 text-xs uppercase tracking-widest mb-8">
+            Partner e Certificazioni
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-10">
+            {[
+              { name: "Cat® Lift Trucks", sub: "Dealer Ufficiale" },
+              { name: "TCM", sub: "Rivenditore Autorizzato" },
+              { name: "ISO 9001", sub: "Qualita Certificata" },
+            ].map((p) => (
+              <div
+                key={p.name}
+                className="px-6 py-3 bg-brand-light rounded-xl border border-gray-100 text-center"
+              >
+                <p className="font-display font-bold text-brand-elevated text-lg">
+                  {p.name}
+                </p>
+                <p className="text-gray-400 text-xs">{p.sub}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ══════ CTA FINALE ══════ */}
-      <section className="py-24 lg:py-32 bg-white">
+      <section className="py-20 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
           <AnimatedSection>
-            <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-4">
+            <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
               Contatti
             </p>
-            <h2 className="font-display text-3xl sm:text-4xl text-brand-elevated leading-tight mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated mb-6">
               Parlaci della tua flotta
             </h2>
-            <p className="text-gray-500 text-lg mb-12 leading-relaxed max-w-xl mx-auto">
+            <p className="text-gray-500 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
               Raccontaci quanti carrelli hai, che problemi stai affrontando.
               Ti facciamo un&apos;analisi gratuita e ti diciamo cosa possiamo fare.
               Senza impegno, senza giri di parole.
@@ -359,7 +497,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contatti"
-                className="inline-flex items-center justify-center gap-3 bg-brand-dark hover:bg-brand-elevated text-white font-medium px-8 py-4 text-sm tracking-wide transition-colors group"
+                className="inline-flex items-center justify-center gap-3 bg-brand-elevated hover:bg-brand-dark text-white font-semibold px-8 py-4 rounded-lg text-sm tracking-wide transition-colors group"
               >
                 Richiedi un&apos;analisi gratuita
                 <ArrowRight
@@ -369,7 +507,7 @@ export default function Home() {
               </Link>
               <a
                 href="tel:+390536800034"
-                className="inline-flex items-center justify-center gap-3 border border-gray-200 hover:border-gray-400 text-brand-elevated px-8 py-4 text-sm tracking-wide transition-colors"
+                className="inline-flex items-center justify-center gap-3 border border-gray-200 hover:border-gray-400 text-brand-elevated px-8 py-4 rounded-lg text-sm tracking-wide transition-colors"
               >
                 <Phone size={15} className="text-brand-accent" />
                 0536 800034
