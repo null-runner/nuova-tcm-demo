@@ -27,13 +27,13 @@ const serviceBlocks = [
     title: "Riparazione e Assistenza",
     subtitle: "Il nostro servizio principale",
     description:
-      "Un carrello fermo è una linea ferma. I nostri tecnici intervengono direttamente presso la vostra sede, su qualsiasi marca, con ricambi originali. Offriamo contratti di manutenzione programmata per ridurre i fermi imprevisti e tenere i costi sotto controllo.",
+      "Un veicolo fermo è una linea ferma. I nostri tecnici intervengono direttamente presso la vostra sede su carrelli elevatori, AGV e LGV, con ricambi originali. Offriamo contratti di manutenzione programmata per ridurre i fermi imprevisti e tenere i costi sotto controllo.",
     features: [
       "Intervento in sede e fuori sede su tutta l'Emilia-Romagna",
       "Manutenzione programmata con calendario concordato",
       "Assistenza d'emergenza con tempo medio di risposta 24h",
       "Ricambi originali CAT® e compatibili multimarca",
-      "Revisioni periodiche con documentazione certificata",
+      "Assistenza su carrelli elevatori, AGV e LGV (Laser Guided Vehicle)",
       "Contratti personalizzati per flotte di qualsiasi dimensione",
     ],
     image: "Tecnico al lavoro su un carrello elevatore",
@@ -61,14 +61,14 @@ const serviceBlocks = [
     title: "Batterie Industriali",
     subtitle: "Analisi, manutenzione e fornitura",
     description:
-      "La batteria è il componente più sottovalutato della flotta. Analizziamo lo stato di salute delle vostre batterie, rigeneriamo quelle recuperabili e forniamo quelle nuove. Qualsiasi tecnologia: piombo-acido, litio, sistemi AGV.",
+      "La batteria è il componente più sottovalutato della flotta. Analizziamo lo stato di salute delle vostre batterie, rigeneriamo quelle recuperabili e forniamo quelle nuove. Qualsiasi tecnologia e qualsiasi veicolo: carrelli, AGV, LGV.",
     features: [
       "Analisi diagnostica e test di capacità",
       "Rigenerazione e ricondizionamento batterie esistenti",
       "Fornitura batterie nuove: piombo-acido e litio",
       "Caricabatterie industriali",
       "Manutenzione preventiva programmata",
-      "Compatibilità con navette automatiche e sistemi AGV",
+      "Compatibilità con AGV, LGV e navette automatiche",
     ],
     image: "Batterie industriali e stazione di ricarica",
   },

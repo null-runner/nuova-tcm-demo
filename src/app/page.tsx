@@ -47,7 +47,7 @@ const services = [
     label: "Assistenza",
     title: "Riparazioni e Manutenzione",
     description:
-      "Manutenzione ordinaria e straordinaria, in sede o fuori sede. Assistenza multimarca con ricambi originali. Contratti personalizzati per flotte di qualsiasi dimensione.",
+      "Manutenzione ordinaria e straordinaria su carrelli elevatori, AGV e LGV. Assistenza multimarca con ricambi originali. Contratti personalizzati per flotte di qualsiasi dimensione.",
     href: "/servizi#riparazione",
     featured: true,
   },
@@ -72,7 +72,7 @@ const services = [
     label: "Energia",
     title: "Batterie Industriali",
     description:
-      "Piombo-acido, litio, qualsiasi tecnologia. Analisi di capacità, rigenerazione, manutenzione e fornitura.",
+      "Piombo-acido, litio, qualsiasi tecnologia. Analisi di capacità, rigenerazione, manutenzione e fornitura per carrelli, AGV e LGV.",
     href: "/servizi#batterie",
   },
   {

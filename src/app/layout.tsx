@@ -42,6 +42,10 @@ export const metadata: Metadata = {
     "riparazione carrelli elevatori",
     "batterie industriali",
     "gestione flotta carrelli",
+    "manutenzione LGV",
+    "assistenza AGV",
+    "batterie LGV laser guided vehicle",
+    "manutenzione veicoli a guida laser",
   ],
   openGraph: {
     type: "website",
