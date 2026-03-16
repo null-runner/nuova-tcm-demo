@@ -1,3 +1,2 @@
 User-agent: *
-Allow: /
-Sitemap: https://nuova-tcm-demo.vercel.app/sitemap.xml
+Disallow: /

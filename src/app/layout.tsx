@@ -47,6 +47,10 @@ export const metadata: Metadata = {
     "batterie LGV laser guided vehicle",
     "manutenzione veicoli a guida laser",
   ],
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
     type: "website",
     locale: "it_IT",
