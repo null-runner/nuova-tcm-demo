@@ -27,20 +27,20 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-brand-dark/98 backdrop-blur-sm border-b border-white/5"
-          : "bg-transparent"
+          ? "bg-white/98 backdrop-blur-sm border-b border-gray-200 shadow-sm"
+          : "bg-white"
       }`}
     >
       {/* Top bar with phone */}
       <div
-        className={`border-b border-white/5 transition-all duration-300 ${
+        className={`border-b border-gray-100 transition-all duration-300 ${
           scrolled ? "h-0 overflow-hidden opacity-0" : "h-auto opacity-100"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-2 flex justify-end">
           <a
             href="tel:+390536800034"
-            className="flex items-center gap-2 text-brand-text-muted hover:text-white transition-colors text-xs font-mono tracking-wide"
+            className="flex items-center gap-2 text-gray-500 hover:text-brand-elevated transition-colors text-xs font-mono tracking-wide"
           >
             <Phone size={12} />
             +39 0536 800034
@@ -52,16 +52,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 border-2 border-brand-accent rounded flex items-center justify-center">
-              <span className="font-mono text-brand-accent text-xs font-medium tracking-tight">
+            <div className="w-9 h-9 border-2 border-[#ECAA0D] rounded flex items-center justify-center bg-[#ECAA0D]">
+              <span className="font-mono text-white text-xs font-bold tracking-tight">
                 TCM
               </span>
             </div>
             <div>
-              <p className="font-display text-white text-lg leading-none">
+              <p className="font-display text-brand-elevated text-lg font-semibold leading-none">
                 Nuova T.C.M.
               </p>
-              <p className="text-brand-text-muted text-[10px] tracking-[0.2em] uppercase font-mono mt-0.5">
+              <p className="text-gray-400 text-[10px] tracking-[0.2em] uppercase font-mono mt-0.5">
                 Service S.r.l.
               </p>
             </div>
@@ -73,7 +73,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="px-4 py-2 text-[13px] font-medium text-brand-text-muted hover:text-white transition-colors tracking-wide"
+                className="px-4 py-2 text-[13px] font-medium text-gray-600 hover:text-brand-elevated transition-colors tracking-wide"
               >
                 {link.label}
               </Link>
@@ -84,16 +84,16 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-5">
             <a
               href="tel:+390536800034"
-              className={`flex items-center gap-2 text-white text-sm font-medium transition-all ${
+              className={`flex items-center gap-2 text-brand-elevated text-sm font-medium transition-all ${
                 scrolled ? "opacity-100" : "opacity-0 pointer-events-none"
               }`}
             >
-              <Phone size={14} className="text-brand-accent" />
+              <Phone size={14} className="text-[#ECAA0D]" />
               <span className="font-mono text-xs">0536 800034</span>
             </a>
             <Link
               href="/contatti"
-              className="bg-brand-accent hover:bg-brand-accent-hover text-white text-[13px] font-medium px-5 py-2.5 transition-colors tracking-wide"
+              className="bg-brand-elevated hover:bg-brand-dark text-white text-[13px] font-medium px-5 py-2.5 rounded-lg transition-colors tracking-wide"
             >
               Parla con un Esperto
             </Link>
@@ -102,7 +102,7 @@ export default function Navbar() {
           {/* Mobile Toggle */}
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden text-white p-2"
+            className="lg:hidden text-brand-elevated p-2"
             aria-label={open ? "Chiudi menu" : "Apri menu"}
           >
             {open ? <X size={22} /> : <Menu size={22} />}
@@ -117,7 +117,7 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-brand-dark border-t border-white/5 overflow-hidden"
+            className="lg:hidden bg-white border-t border-gray-100 overflow-hidden"
           >
             <div className="px-6 py-6 space-y-1">
               {links.map((link) => (
@@ -125,23 +125,23 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block px-3 py-3 text-brand-text-muted hover:text-white transition-colors text-sm"
+                  className="block px-3 py-3 text-gray-600 hover:text-brand-elevated transition-colors text-sm"
                 >
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-5 mt-5 border-t border-white/5 space-y-3">
+              <div className="pt-5 mt-5 border-t border-gray-100 space-y-3">
                 <a
                   href="tel:+390536800034"
-                  className="flex items-center gap-2 text-brand-text-muted px-3 py-2 text-sm"
+                  className="flex items-center gap-2 text-gray-500 px-3 py-2 text-sm"
                 >
-                  <Phone size={14} className="text-brand-accent" />
+                  <Phone size={14} className="text-[#ECAA0D]" />
                   +39 0536 800034
                 </a>
                 <Link
                   href="/contatti"
                   onClick={() => setOpen(false)}
-                  className="block bg-brand-accent text-white font-medium px-3 py-3 text-sm text-center"
+                  className="block bg-brand-elevated text-white font-medium px-3 py-3 rounded-lg text-sm text-center"
                 >
                   Parla con un Esperto
                 </Link>
