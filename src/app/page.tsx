@@ -80,52 +80,56 @@ export default function Home() {
   return (
     <>
       {/* ══════ HERO ══════ */}
-      <section className="relative min-h-[92vh] flex items-center bg-brand-dark overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/hero-forklift.jpg"
-            alt="Carrello elevatore Cat® in operazione in un magazzino industriale"
-            fill
-            className="object-cover opacity-25"
-            priority
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/85 to-brand-dark/30" />
-        </div>
+      <section className="relative min-h-[92vh] flex items-center bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-32 lg:py-40 w-full">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+            {/* Left: Text */}
+            <div>
+              <p className="font-mono text-brand-accent text-xs tracking-[0.25em] uppercase mb-6">
+                Dealer ufficiale Cat® Lift Trucks · Dal 1994
+              </p>
 
-        <div className="relative max-w-7xl mx-auto px-6 lg:px-8 py-40">
-          <div className="max-w-2xl">
-            <p className="font-mono text-brand-accent text-xs tracking-[0.25em] uppercase mb-6">
-              Dealer ufficiale Cat® Lift Trucks · Dal 1994
-            </p>
+              <h1 className="font-display text-[2.75rem] sm:text-[3.5rem] lg:text-[4rem] text-brand-elevated leading-[1.08] mb-8">
+                Assistenza carrelli elevatori in Emilia-Romagna
+              </h1>
 
-            <h1 className="font-display text-[2.75rem] sm:text-[3.5rem] lg:text-[4.25rem] text-white leading-[1.08] mb-8">
-              Assistenza carrelli elevatori in Emilia-Romagna
-            </h1>
+              <p className="text-gray-500 text-lg max-w-xl mb-12 leading-relaxed">
+                Riparazioni, gestione flotta e batterie industriali.
+                Da Sassuolo operiamo su tutta l&apos;Emilia-Romagna.
+              </p>
 
-            <p className="text-brand-text-muted text-lg max-w-xl mb-12 leading-relaxed">
-              Riparazioni, gestione flotta e batterie industriali.
-              Da Sassuolo operiamo su tutta l&apos;Emilia-Romagna.
-            </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link
+                  href="/contatti"
+                  className="inline-flex items-center justify-center gap-3 bg-brand-elevated hover:bg-brand-dark text-white font-medium px-8 py-4 text-sm tracking-wide transition-colors group"
+                >
+                  Parla con un Esperto
+                  <ArrowRight
+                    size={16}
+                    className="group-hover:translate-x-1 transition-transform"
+                  />
+                </Link>
+                <a
+                  href="tel:+390536800034"
+                  className="inline-flex items-center justify-center gap-3 border border-gray-200 hover:border-gray-400 text-brand-elevated px-8 py-4 text-sm tracking-wide transition-colors"
+                >
+                  <Phone size={15} className="text-brand-accent" />
+                  0536 800034
+                </a>
+              </div>
+            </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/contatti"
-                className="inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-brand-accent-hover text-white font-medium px-8 py-4 text-sm tracking-wide transition-colors group"
+            {/* Right: Video */}
+            <div className="flex items-center justify-center">
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="w-full max-w-lg mix-blend-multiply"
               >
-                Parla con un Esperto
-                <ArrowRight
-                  size={16}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </Link>
-              <a
-                href="tel:+390536800034"
-                className="inline-flex items-center justify-center gap-3 border border-white/15 hover:border-white/30 text-white px-8 py-4 text-sm tracking-wide transition-colors"
-              >
-                <Phone size={15} className="text-brand-accent" />
-                0536 800034
-              </a>
+                <source src="/images/hero-forklift.mp4" type="video/mp4" />
+              </video>
             </div>
           </div>
         </div>
@@ -141,7 +145,7 @@ export default function Home() {
             {[
               { value: "30+", label: "anni nel settore" },
               { value: "500+", label: "clienti attivi" },
-              { value: "24h", label: "tempo max intervento" },
+              { value: "24h", label: "tempo medio intervento" },
               { value: "Cat®", label: "dealer ufficiale" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
