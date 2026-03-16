@@ -73,12 +73,18 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://www.nuovatcmservice.com/#organization",
   name: "Nuova T.C.M. Service S.r.l.",
   description:
-    "Assistenza, vendita e noleggio carrelli elevatori. Dealer ufficiale CAT® Lift Trucks a Sassuolo dal 1994.",
+    "Assistenza, vendita e noleggio carrelli elevatori. Dealer ufficiale CAT® Lift Trucks. Manutenzione carrelli, AGV e LGV. Sede a Sassuolo, operativi in tutta l'Emilia-Romagna.",
   url: "https://www.nuovatcmservice.com",
-  telephone: "+390536800034",
+  telephone: "+39 0536 800034",
   email: "info@nuovatcmservice.com",
+  image: "https://nuova-tcm-demo.vercel.app/images/og-image.png",
+  logo: "https://nuova-tcm-demo.vercel.app/images/catalog/logo-company.png",
+  sameAs: [
+    "https://www.facebook.com/nuovatcm/",
+  ],
   address: {
     "@type": "PostalAddress",
     streetAddress: "Piazza Bernina 6",
@@ -91,6 +97,30 @@ const localBusinessSchema = {
     "@type": "GeoCoordinates",
     latitude: 44.5345,
     longitude: 10.7847,
+  },
+  areaServed: [
+    { "@type": "City", name: "Sassuolo" },
+    { "@type": "City", name: "Modena" },
+    { "@type": "City", name: "Bologna" },
+    { "@type": "City", name: "Reggio Emilia" },
+    { "@type": "City", name: "Parma" },
+    { "@type": "City", name: "Carpi" },
+    { "@type": "City", name: "Fiorano Modenese" },
+    { "@type": "City", name: "Casalgrande" },
+    { "@type": "City", name: "Castellarano" },
+    { "@type": "AdministrativeArea", name: "Emilia-Romagna" },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Carrelli Elevatori CAT® Lift Trucks",
+    itemListElement: [
+      { "@type": "OfferCatalog", name: "Assistenza e Riparazione" },
+      { "@type": "OfferCatalog", name: "Noleggio Carrelli Elevatori" },
+      { "@type": "OfferCatalog", name: "Vendita Carrelli Nuovi e Usati" },
+      { "@type": "OfferCatalog", name: "Batterie Industriali" },
+      { "@type": "OfferCatalog", name: "Gestione Flotta" },
+      { "@type": "OfferCatalog", name: "Manutenzione AGV e LGV" },
+    ],
   },
   openingHoursSpecification: [
     {

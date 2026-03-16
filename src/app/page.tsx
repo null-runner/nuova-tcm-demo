@@ -482,6 +482,39 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ══════ AREA SERVITA ══════ */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimatedSection>
+            <div className="text-center mb-10">
+              <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
+                Dove operiamo
+              </p>
+              <h2 className="font-display text-2xl font-bold text-brand-elevated">
+                Assistenza carrelli elevatori in tutta l&apos;Emilia-Romagna
+              </h2>
+            </div>
+            <div className="flex flex-wrap justify-center gap-3">
+              {[
+                "Sassuolo", "Modena", "Bologna", "Reggio Emilia", "Parma",
+                "Carpi", "Fiorano Modenese", "Casalgrande", "Castellarano",
+                "Formigine", "Maranello", "Vignola", "Scandiano",
+              ].map((city) => (
+                <span
+                  key={city}
+                  className="px-4 py-2 bg-brand-light text-brand-elevated text-sm rounded-lg border border-gray-100"
+                >
+                  {city}
+                </span>
+              ))}
+            </div>
+            <p className="text-center text-gray-500 text-sm mt-6">
+              Sede a Sassuolo, interventi su tutta la provincia di Modena, Bologna, Reggio Emilia e Parma.
+            </p>
+          </AnimatedSection>
+        </div>
+      </section>
+
       {/* ══════ CTA FINALE ══════ */}
       <section className="py-20 lg:py-24 bg-white">
         <div className="max-w-3xl mx-auto px-6 lg:px-8 text-center">
