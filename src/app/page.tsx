@@ -148,14 +148,15 @@ export default function Home() {
               </p>
 
               <h1 className="font-display text-4xl sm:text-5xl lg:text-[3.25rem] font-bold text-brand-elevated leading-[1.12] mb-6">
-                Il vostro carrello è fermo.
+                Ogni ora di fermo costa.
                 <br />
-                <span className="text-brand-accent">Noi siamo già in strada.</span>
+                <span className="text-brand-accent">Noi lo sappiamo bene.</span>
               </h1>
 
               <p className="text-gray-600 text-lg max-w-xl mb-10 leading-relaxed">
-                Dealer ufficiale CAT® Lift Trucks dal 1994. Assistenza, gestione flotta
-                e batterie industriali per l&apos;industria manifatturiera emiliana.
+                Assistenza carrelli elevatori, gestione flotta e batterie
+                industriali. Dealer CAT® Lift Trucks dal 1994, con sede a
+                Sassuolo e operativi su tutta l&apos;Emilia-Romagna.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -178,8 +179,8 @@ export default function Home() {
                 </a>
               </div>
 
-              <p className="text-gray-400 text-sm">
-                Oltre 500 aziende nel distretto ceramico e manifatturiero ci hanno già scelto.
+              <p className="text-gray-400 text-sm italic">
+                Oltre 500 aziende nel distretto ceramico e manifatturiero si affidano a noi.
               </p>
             </div>
           </div>
@@ -215,10 +216,10 @@ export default function Home() {
           <AnimatedSection>
             <div className="max-w-2xl mb-14">
               <p className="font-mono text-brand-accent text-xs tracking-[0.2em] uppercase mb-3">
-                Perche le aziende ci scelgono
+                Perché scegliere noi
               </p>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated">
-                Chi gestisce una flotta sa quanto conta avere il partner giusto
+                Tre cose che il vostro attuale fornitore probabilmente non fa
               </h2>
             </div>
           </AnimatedSection>
@@ -253,7 +254,7 @@ export default function Home() {
                 I nostri servizi
               </p>
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-white">
-                Un unico partner per carrelli, batterie e ricambi
+                Tutto quello che serve alla vostra flotta. Da un unico fornitore.
               </h2>
             </div>
           </AnimatedSection>
@@ -389,7 +390,7 @@ export default function Home() {
                 Il nostro approccio
               </p>
               <h2 className="font-display text-3xl font-bold text-brand-elevated mb-10">
-                La competenza di un dealer ufficiale. La reattività di chi è sul territorio.
+                Non siamo il fornitore più grande. Siamo quello che risponde.
               </h2>
 
               <div className="space-y-8">
@@ -427,11 +428,10 @@ export default function Home() {
                   Trent&apos;anni nel cuore del distretto ceramico
                 </h2>
                 <p className="text-brand-text-muted leading-relaxed max-w-lg">
-                  Nata a Sassuolo, Nuova T.C.M. Service ha costruito la propria
-                  reputazione lavorando fianco a fianco con le aziende leader del
-                  comprensorio. La nostra dimensione ci permette un servizio su
-                  misura, con tempi di risposta che le grandi strutture non possono
-                  garantire.
+                  Quando un carrello si ferma alle 7 di mattina e la linea di
+                  produzione si blocca, non serve un call center. Serve qualcuno
+                  che conosce i vostri impianti e sia in grado di intervenire
+                  in tempi reali. Noi facciamo questo da trent&apos;anni.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-px">
@@ -490,12 +490,12 @@ export default function Home() {
               Contatti
             </p>
             <h2 className="font-display text-3xl sm:text-4xl font-bold text-brand-elevated mb-6">
-              Volete sapere cosa possiamo fare per la vostra flotta?
+              La prima consulenza è gratuita. E senza impegno.
             </h2>
             <p className="text-gray-600 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
-              Contattateci per una consulenza tecnica. Analizziamo la vostra
-              situazione attuale e vi proponiamo le soluzioni più adatte,
-              senza impegno.
+              Raccontateci quanti carrelli avete e che problemi state affrontando.
+              Vi facciamo un&apos;analisi della situazione e vi diciamo cosa
+              possiamo fare. Nessun obbligo, nessuna pressione.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
