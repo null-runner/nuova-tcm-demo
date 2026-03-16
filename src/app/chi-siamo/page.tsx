@@ -12,9 +12,9 @@ import AnimatedSection from "@/components/AnimatedSection";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
-  title: "Chi Siamo",
+  title: "Dealer CAT® Lift Trucks Sassuolo dal 1994",
   description:
-    "Nuova T.C.M. Service: dealer CAT® Lift Trucks dal 1994. Assistenza, noleggio e riparazione carrelli elevatori in Emilia-Romagna.",
+    "Nuova T.C.M. Service: dealer ufficiale CAT® Lift Trucks dal 1994. Assistenza, noleggio e riparazione carrelli elevatori in Emilia-Romagna.",
 };
 
 const timeline = [

@@ -23,6 +23,10 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nuova-tcm-demo.vercel.app"),
+  alternates: {
+    canonical: "/",
+  },
   title: {
     default:
       "Assistenza Carrelli Elevatori Emilia-Romagna | Nuova T.C.M. Service",
@@ -55,6 +59,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "it_IT",
     siteName: "Nuova T.C.M. Service",
+    images: [
+      {
+        url: "/images/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Nuova T.C.M. Service - Assistenza Carrelli Elevatori in Emilia-Romagna",
+      },
+    ],
   },
 };
 

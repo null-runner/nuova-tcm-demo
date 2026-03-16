@@ -5,19 +5,19 @@ import {
   Wrench,
   Battery,
   Phone,
+  Settings,
   ClipboardCheck,
   ArrowRight,
   Check,
   RotateCw,
-  Settings,
 } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 export const metadata: Metadata = {
-  title: "Servizi",
+  title: "Assistenza e Noleggio Carrelli Elevatori Sassuolo",
   description:
-    "Riparazione, noleggio, acquisto carrelli elevatori e batterie industriali in Emilia-Romagna. Dealer CAT® Lift Trucks. Un unico referente per tutta la flotta.",
+    "Riparazione, noleggio, acquisto carrelli elevatori, gestione flotta e batterie industriali in Emilia-Romagna. Dealer CAT® Lift Trucks dal 1994.",
 };
 
 const serviceBlocks = [
@@ -37,6 +37,23 @@ const serviceBlocks = [
       "Contratti personalizzati per flotte di qualsiasi dimensione",
     ],
     image: "Tecnico al lavoro su un carrello elevatore",
+  },
+  {
+    id: "gestione-flotta",
+    icon: Settings,
+    title: "Gestione Flotta",
+    subtitle: "Analisi tecnica e ottimizzazione",
+    description:
+      "Monitoriamo lo stato dei vostri veicoli e delle batterie per aiutarvi a pianificare interventi e sostituzioni. Forniamo i dati per prendere decisioni informate su riparazione, sostituzione o ammodernamento della flotta.",
+    features: [
+      "Mappatura completa dello stato della flotta",
+      "Analisi cicli batteria e previsione vita utile",
+      "Piano di manutenzione preventiva personalizzato",
+      "Ottimizzazione dei costi operativi della movimentazione",
+      "Report periodici sullo stato dei veicoli",
+      "Consulenza per transizione a flotte elettriche o LGV",
+    ],
+    image: "Dashboard gestione flotta con dati veicoli",
   },
   {
     id: "vendita",

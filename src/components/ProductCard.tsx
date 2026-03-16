@@ -13,8 +13,29 @@ interface ProductModel {
 }
 
 export default function ProductCard({ model }: { model: ProductModel }) {
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: `CAT® ${model.name}`,
+    brand: { "@type": "Brand", name: "CAT Lift Trucks" },
+    category: "Carrelli Elevatori",
+    image: `https://nuova-tcm-demo.vercel.app${model.image}`,
+    offers: {
+      "@type": "Offer",
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: "Nuova T.C.M. Service S.r.l.",
+      },
+    },
+  };
+
   return (
     <div className="bg-white border border-gray-100 rounded-xl overflow-hidden hover:shadow-lg hover:shadow-gray-100/50 transition-all group">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
       <div className="aspect-square bg-brand-light flex items-center justify-center p-8 overflow-hidden">
         <Image
           src={model.image}
