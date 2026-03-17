@@ -73,7 +73,7 @@ export const metadata: Metadata = {
 const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://www.nuovatcmservice.com/#organization",
+  "@id": "https://www.nuovatcmservice.com/#local-business",
   name: "Nuova T.C.M. Service S.r.l.",
   description:
     "Assistenza, vendita e noleggio carrelli elevatori. Dealer ufficiale CAT® Lift Trucks. Manutenzione carrelli, AGV e LGV. Sede a Sassuolo, operativi in tutta l'Emilia-Romagna.",
@@ -147,6 +147,19 @@ const localBusinessSchema = {
     },
   ],
   priceRange: "$$",
+  foundingDate: "1994",
+};
+
+const webSiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Nuova T.C.M. Service",
+  url: "https://www.nuovatcmservice.com",
+  publisher: {
+    "@type": "Organization",
+    "@id": "https://www.nuovatcmservice.com/#local-business",
+  },
+  inLanguage: "it-IT",
 };
 
 export default function RootLayout({
@@ -161,6 +174,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(localBusinessSchema),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(webSiteSchema),
           }}
         />
       </head>

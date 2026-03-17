@@ -1,16 +1,15 @@
 import { MetadataRoute } from "next";
 
 const baseUrl = "https://nuova-tcm-demo.vercel.app";
+const buildDate = "2026-03-17";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date().toISOString();
-
   const mainPages = [
-    { url: baseUrl, lastModified: now, changeFrequency: "weekly" as const, priority: 1.0 },
-    { url: `${baseUrl}/chi-siamo`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.7 },
-    { url: `${baseUrl}/servizi`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.9 },
-    { url: `${baseUrl}/catalogo`, lastModified: now, changeFrequency: "weekly" as const, priority: 0.9 },
-    { url: `${baseUrl}/contatti`, lastModified: now, changeFrequency: "monthly" as const, priority: 0.8 },
+    { url: baseUrl, lastModified: buildDate, changeFrequency: "weekly" as const, priority: 1.0 },
+    { url: `${baseUrl}/chi-siamo`, lastModified: buildDate, changeFrequency: "monthly" as const, priority: 0.7 },
+    { url: `${baseUrl}/servizi`, lastModified: buildDate, changeFrequency: "monthly" as const, priority: 0.9 },
+    { url: `${baseUrl}/catalogo`, lastModified: buildDate, changeFrequency: "weekly" as const, priority: 0.9 },
+    { url: `${baseUrl}/contatti`, lastModified: buildDate, changeFrequency: "monthly" as const, priority: 0.8 },
   ];
 
   const catalogPages = [
@@ -27,7 +26,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "carrelli-usati",
   ].map((slug) => ({
     url: `${baseUrl}/catalogo/${slug}`,
-    lastModified: now,
+    lastModified: buildDate,
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));

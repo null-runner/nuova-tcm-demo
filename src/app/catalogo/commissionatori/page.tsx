@@ -1,3 +1,4 @@
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowLeft, ArrowRight } from "lucide-react";
@@ -33,6 +34,11 @@ const models = [
 export default function Page() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Home", href: "/" },
+        { name: "Catalogo", href: "/catalogo" },
+        { name: "commissionatori", href: "/catalogo/commissionatori" },
+      ]} />
       <section className="bg-brand-dark pt-32 pb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">

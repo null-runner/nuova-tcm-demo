@@ -13,16 +13,30 @@ interface ProductModel {
 }
 
 export default function ProductCard({ model }: { model: ProductModel }) {
+  const capacityStr = typeof model.capacity_kg === "number"
+    ? `${model.capacity_kg} kg`
+    : `${model.capacity_kg} kg`;
+  const description = `Carrello elevatore CAT® ${model.name}. Portata ${capacityStr}${
+    model.battery ? `, batteria ${model.battery}` : ""
+  }${
+    model.maxLiftHeight_mm
+      ? `, altezza max sollevamento ${model.maxLiftHeight_mm / 1000} m`
+      : ""
+  }. Disponibile presso Nuova T.C.M. Service, dealer ufficiale CAT® Lift Trucks in Emilia-Romagna.`;
+
   const productSchema = {
     "@context": "https://schema.org",
     "@type": "Product",
     name: `CAT® ${model.name}`,
+    description,
+    sku: model.name,
     brand: { "@type": "Brand", name: "CAT Lift Trucks" },
     category: "Carrelli Elevatori",
     image: `https://nuova-tcm-demo.vercel.app${model.image}`,
     offers: {
       "@type": "Offer",
       availability: "https://schema.org/InStock",
+      url: "https://nuova-tcm-demo.vercel.app/contatti",
       seller: {
         "@type": "Organization",
         name: "Nuova T.C.M. Service S.r.l.",
@@ -44,6 +58,7 @@ export default function ProductCard({ model }: { model: ProductModel }) {
           height={400}
           className="object-contain w-full h-full group-hover:scale-105 transition-transform duration-300"
           loading="lazy"
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
       </div>
       <div className="p-6">

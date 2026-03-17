@@ -1,3 +1,4 @@
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import type { Metadata } from "next";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -42,6 +43,10 @@ const contactInfo = [
 export default function Contatti() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Home", href: "/" },
+        { name: "Contatti", href: "/contatti" },
+      ]} />
       {/* HERO */}
       <section className="bg-brand-dark pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />

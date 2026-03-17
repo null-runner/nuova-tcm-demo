@@ -31,6 +31,7 @@ export default function HeroVideo() {
         loop
         playsInline
         preload="auto"
+        poster="/images/hero-poster.jpg"
         className={`w-full h-full object-contain mix-blend-multiply transition-opacity duration-700 ease-out ${
           ready ? "opacity-100" : "opacity-0"
         }`}

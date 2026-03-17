@@ -292,6 +292,7 @@ export default function Home() {
                     height={300}
                     className="rounded-xl object-cover opacity-60"
                     loading="lazy"
+                    sizes="(max-width: 1024px) 0px, 500px"
                   />
                 </div>
               </div>
@@ -381,6 +382,7 @@ export default function Home() {
                   height={448}
                   className="w-full h-auto object-cover"
                   loading="lazy"
+                  sizes="(max-width: 1024px) 100vw, 672px"
                 />
               </div>
             </AnimatedSection>

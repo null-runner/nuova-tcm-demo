@@ -1,3 +1,4 @@
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -57,6 +58,11 @@ const models: UsedModel[] = [
 export default function CarrelliUsati() {
   return (
     <>
+      <BreadcrumbSchema items={[
+        { name: "Home", href: "/" },
+        { name: "Catalogo", href: "/catalogo" },
+        { name: "Carrelli Usati", href: "/catalogo/carrelli-usati" },
+      ]} />
       <section className="bg-brand-dark pt-32 pb-16 relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(184,122,10,0.06),transparent_60%)]" />
         <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
@@ -98,7 +104,7 @@ export default function CarrelliUsati() {
                   <div className="aspect-[4/3] bg-brand-light overflow-hidden relative">
                     <Image
                       src={model.image}
-                      alt={`${model.name} usato`}
+                      alt={`${model.name} ${model.type === "Electric" ? "elettrico" : "diesel"}${model.mast ? ` montante ${model.mast}` : ""} usato`}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-300"
                       loading="lazy"
